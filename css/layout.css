@@ -16,13 +16,17 @@
   text-align: right; }
 
 .headerLogo {
-  font-family: Futura2;
+  font-family: Futura;
   font-weight: 900;
   font-size: 3.6rem;
   text-transform: uppercase;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  text-decoration: none; }
   .headerLogo > span {
-    font-family: Futura; }
+    font-weight: 100; }
+  .headerLogo:visited, .headerLogo:hover {
+    color: #000; }
 
 .headerMenuLi {
   display: inline-block;
@@ -30,7 +34,7 @@
   padding: 0; }
 
 .headerMenuLink {
-  font-family: 'Futura1';
+  font-weight: 400;
   font-size: 2.6rem;
   text-decoration: none;
   color: #000;
@@ -40,7 +44,7 @@
   .headerMenuLink:hover {
     border-bottom-color: #000; }
   .headerMenuLink.active {
-    font-family: Futura3;
+    font-weight: 700;
     border-bottom-color: #000; }
 
 .headerLang {
@@ -65,9 +69,12 @@
   display: table;
   width: 100%;
   max-width: 1091px;
-  padding: 1.4rem 2rem 0;
+  padding: 1.4rem 2rem 2rem;
   margin: auto;
   box-sizing: border-box; }
+
+.footerWrapLogo > img {
+  width: 4.3rem; }
 
 .burger-menu {
   display: none;
@@ -146,16 +153,19 @@
 
 .aboutInerr {
   display: table;
-  width: 100%; }
+  width: 100%;
+  padding-top: 1rem; }
 
 .aboutContent,
 .aboutImg {
-  display: table-cell;
-  padding: 2rem; }
+  display: table-cell; }
 
 .aboutContent {
   background-color: #0042ff;
-  width: 38rem; }
+  width: 49rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1.1rem 1.4rem 1.5rem; }
 
 .aboutImg {
   background: url(../img/aboutBg.jpg) center;
@@ -164,28 +174,25 @@
 .aboutContentText {
   color: #fff;
   font-size: 1.5rem;
-  line-height: 1.8; }
+  line-height: 2rem; }
 
 .contactInerr {
   background: transparent url("../img/contactBg.jpg") center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  margin-top: .5rem; }
 
 .contactContent {
-  width: 20rem;
-  height: 62.5rem;
-  background-color: #0042ff;
+  height: 62.6rem;
+  background-color: rgba(0, 66, 255, 0.7);
   color: #fff;
-  padding: 2rem;
-  mix-blend-mode: multiply; }
+  padding: 1.2rem 4.2rem 1.2rem 1.2rem;
+  box-sizing: border-box;
+  display: inline-block; }
 
 .contactText {
   font-size: 1.5rem;
-  line-height: 1.7;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  z-index: 3;
+  line-height: 2rem;
   color: #fff; }
   .contactText > a {
     color: #fff;
@@ -206,3 +213,24 @@
 
 .worksshopsItem:not(:last-child) {
   margin-right: 5%; }
+
+.works {
+  padding-top: 1rem; }
+
+.worksNavi {
+  text-align: right; }
+
+.worksNaviLi {
+  display: inline-block; }
+
+.worksNaviLink {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  display: inline-block;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: #000; }
+  .worksNaviLink.active, .worksNaviLink:hover {
+    background-color: #0042ff;
+    color: #fff; }
