@@ -168,7 +168,8 @@
 
 .contactInerr {
   background: transparent url("../img/contactBg.jpg") center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .contactContent {
   width: 20rem;
@@ -180,7 +181,28 @@
 
 .contactText {
   font-size: 1.5rem;
-  line-height: 1.7; }
+  line-height: 1.7;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 3;
+  color: #fff; }
   .contactText > a {
     color: #fff;
     text-decoration: none; }
+
+.worksshopsInner {
+  display: inline-block;
+  width: 100%; }
+
+.worksshopsItem {
+  background-color: #0042ff;
+  color: #fff;
+  padding: 1rem;
+  float: left;
+  width: 30%;
+  margin-bottom: 3rem;
+  box-sizing: border-box; }
+
+.worksshopsItem:not(:last-child) {
+  margin-right: 5%; }
