@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Futura';
+  font-style: normal;
+  src: url("fonts/futurafuturislightc.otf"); }
+
+@font-face {
+  font-family: 'Futura1';
+  font-style: normal;
+  src: url("fonts/futurabookc.otf"); }
+
+@font-face {
+  font-family: 'Futura2';
+  font-style: normal;
+  src: url("fonts/futurafuturisc.otf"); }
+
+@font-face {
+  font-family: 'Futura3';
+  font-style: italic;
+  src: url("fonts/futurafuturiscondboldc.otf"); }
+
+@font-face {
+  font-family: 'Futura4';
+  src: url("../fonts/futurafuturiscondextraboldc.ttf");
+  font-style: normal; }

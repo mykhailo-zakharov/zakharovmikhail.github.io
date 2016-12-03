@@ -1,577 +1,186 @@
-:root {
-  font-size: 10px;
-  font-family: OpenSans; }
-
-@media only screen and (max-width: 1280px) {
-  :root {
-    font-size: 0.8vw; } }
-
-@media only screen and (max-width: 1080px) {
-  :root {
-    font-size: 7.9px; } }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/Oswald-Light.ttf"); }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Oswald-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Oswald-Bold.ttf"); }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: italic;
-  font-weight: 100;
-  src: url("../fonts/Oswald-LightItalic.ttf"); }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Regular.ttf");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Bold.ttf");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-ExtraBoldItalic.ttf");
-  font-weight: 900;
-  font-style: normal; }
-
-.containerBig {
-  width: 100%;
-  max-width: 1357px;
-  margin: auto;
-  padding: 0 2rem;
-  box-sizing: border-box; }
-
-.headerBoxWrap {
+.headerIneer {
   display: table;
   width: 100%;
-  height: 14.1rem;
-  padding-top: 1.2rem;
+  max-width: 1099px;
+  padding: 0.6rem 2rem 0.4rem;
+  margin: auto;
   box-sizing: border-box; }
 
-.headerLogoBox {
+.headerLogoWrap {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: bottom;
+  text-align: left; }
 
-.headerTop {
-  background-color: #8dc2bf;
-  padding: 1.45rem 0;
+.headerContent {
+  display: table-cell;
   text-align: right; }
-
-.headerToplink {
-  color: #fff;
-  font-family: "Oswald";
-  font-weight: 400;
-  text-decoration: none;
-  transition-duration: .3s;
-  font-size: 1.5rem; }
-  .headerToplink:hover {
-    text-decoration: none;
-    color: #000; }
-
-.headerToplink:not(:last-child) {
-  border-right: 2px solid #fff;
-  padding-right: 1.1rem;
-  margin-right: 1.2rem; }
 
 .headerLogo {
-  height: 8rem; }
-
-.headerTopBox {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-  padding-left: 3rem; }
-
-.headerTopBoxText {
-  font-family: Oswald;
-  color: #83807f;
-  font-size: 2.6rem;
-  letter-spacing: 0.21rem;
-  font-style: italic;
-  font-weight: 100; }
-
-.headerTopMenu {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0; }
-
-.headerTopMenuLi {
-  display: inline-block; }
-
-.headerTopMenuItem {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 2.4rem;
-  display: block;
-  padding: 1rem 2.65rem;
-  text-decoration: none;
-  color: #83807f;
-  letter-spacing: 0.07rem; }
-  .headerTopMenuItem:hover {
-    text-decoration: none;
-    color: #83807f; }
-
-.headerLine {
-  background-color: #ededec;
-  height: 1px;
-  width: 100%; }
-
-.footer {
-  background-color: #6e7471;
-  padding: 6.1rem 5.7rem 1rem; }
-
-.footerTitle {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 1.6rem;
-  color: #8dc2bf;
+  font-family: Futura2;
+  font-weight: 900;
+  font-size: 3.6rem;
   text-transform: uppercase;
-  margin: 0 0 2.4rem; }
-
-.footertext {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 1.6rem;
-  color: #fff;
-  line-height: 1.5; }
-
-.footertext > span {
-  color: #e8b749; }
-
-.footerBestImg > img {
-  padding-top: 0.7rem;
-  height: 6.7rem; }
-
-.footer .row > div:nth-child(2) {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff; }
-
-.footer .row > div:nth-child(4) {
-  border-right: 1px solid #fff; }
-
-.footerContact {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.footerContactLink {
-  display: block;
-  text-decoration: none;
-  color: fff;
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 1.6rem; }
-  .footerContactLink:hover {
-    color: #000;
-    text-decoration: none; }
-  .footerContactLink:nth-of-type(1) {
-    margin-top: 3rem; }
-  .footerContactLink:nth-of-type(3) {
-    margin-bottom: 3rem; }
-
-.footerContactLink > span {
-  display: inline-block;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #000;
-  margin-right: 2rem; }
-
-.footerSocial {
-  margin: 0;
-  padding: 0; }
-
-.footerSocialItem {
-  display: inline-block;
-  margin-right: 2rem; }
-
-.footerBest {
-  display: table-row;
-  width: 100%; }
-
-.footerBestImg,
-.footerBestText {
-  display: table-cell; }
-
-.footerBestText {
-  padding-left: 2rem;
-  vertical-align: top; }
-
-.footerBottom {
-  display: table;
-  margin-top: 10rem;
-  width: 100%; }
-
-.footerCopyright {
-  display: table-cell;
-  font-size: 1.6rem;
-  color: #fff;
-  font-family: "Oswald";
-  font-weight: 100; }
-
-.footerAnother {
-  display: table-cell;
-  text-align: right; }
-
-.footerAnotherLink {
-  font-size: 1.6rem;
-  color: #fff;
-  font-family: "Oswald";
-  font-weight: 100; }
-  .footerAnotherLink:not(:first-child):before {
-    content: "|";
-    margin: 0 2rem;
-    color: #fff; }
-  .footerAnotherLink:hover {
-    text-decoration: none;
-    color: #000; }
-
-.indexFirst {
-  position: relative; }
-
-.indexFirstContent {
-  background: url("../img/indexFirstBg.jpg") no-repeat center;
-  background-size: cover;
-  text-align: center; }
-
-.indexFirstTitle {
-  text-transform: uppercase;
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 4rem;
-  padding: 8rem 2rem 7.8rem;
-  text-align: center;
-  color: #fff;
-  margin: 0;
   letter-spacing: 0.1rem; }
+  .headerLogo > span {
+    font-family: Futura; }
 
-.indexFirstText {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 2rem;
-  color: #fff;
-  margin: 4.4rem 0 0; }
-
-.indexFirsImg {
-  margin: 3.4rem 0 8.3rem; }
-
-.indexFirsImgText {
-  background-color: #d8e1de;
-  color: #83807f;
-  font-family: 'OpenSans';
-  font-weight: 300;
-  font-style: italic;
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 2rem 2rem 2.5rem;
-  letter-spacing: -0.06rem; }
-
-.indexFirstInput {
-  padding: 1rem 2rem;
-  width: 33.7rem;
-  height: 4rem;
-  border: none; }
-  .indexFirstInput:focus {
-    outline: 2px solid #eeb840; }
-
-.indexFirstBtn {
-  border: none;
-  height: 4rem;
-  width: 8.1rem;
-  background-color: #eeb840;
-  color: #fff;
-  font-weight: bold; }
-  .indexFirstBtn:hover {
-    background-color: #cf9512; }
-
-.indexDescribe {
-  padding: 2rem 0 5rem; }
-
-.indexDescribeTitle {
-  font-size: 2.4rem;
-  color: #9c8b57;
-  font-family: "Oswald";
-  font-weight: 100;
-  position: relative;
-  padding: 2.6rem 0 3.3rem;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.06rem; }
-
-.indexDescribeTitle:before {
-  content: "";
-  height: 1px;
-  width: 10rem;
-  position: absolute;
-  bottom: 1.6rem;
-  right: 0;
-  left: 0;
-  margin: auto;
-  background-color: #9c8b57; }
-
-.indexDescribeText {
-  font-size: 1.6rem;
-  font-family: "OpenSans";
-  color: #83807f;
-  text-align: center;
-  line-height: 1.55; }
-
-.indexDescribeText > span {
-  color: #eeb840; }
-
-.indexStyle {
-  background-color: #f5f5f5;
-  padding: 5rem 0; }
-
-.indexStyleTitle {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 3rem;
-  color: #9c8b57;
-  position: relative;
-  margin-top: 0.5rem;
-  padding-bottom: 2rem;
-  margin-bottom: 4.1rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem; }
-
-.indexStyleTitle:before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 10rem;
-  background-color: #9c8b57;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto; }
-
-.indexStyle .col-xs-12:nth-child(1) .indexStyleItem,
-.indexStyle .col-xs-12:nth-child(5) .indexStyleItem {
-  background-image: url(../img/indexStyleBg1.jpg); }
-
-.indexStyle .col-xs-12:nth-child(2) .indexStyleItem,
-.indexStyle .col-xs-12:nth-child(6) .indexStyleItem {
-  background-image: url(../img/indexStyleBg2.jpg); }
-
-.indexStyle .col-xs-12:nth-child(3) .indexStyleItem,
-.indexStyle .col-xs-12:nth-child(7) .indexStyleItem {
-  background-image: url(../img/indexStyleBg3.jpg); }
-
-.indexStyle .col-xs-12:nth-child(4) .indexStyleItem,
-.indexStyle .col-xs-12:nth-child(8) .indexStyleItem {
-  background-image: url(../img/indexStyleBg4.jpg); }
-
-.indexStyleItem {
-  position: relative;
-  background-size: cover;
+.headerMenuLi {
   display: inline-block;
-  width: 100%;
-  margin-bottom: 3rem; }
-
-.indexStyleItemLine {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  left: 1rem;
-  bottom: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  pointer-events: none; }
-
-.indexStyleItemContent {
-  margin: 2rem;
-  padding: 2rem 1rem 3rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  text-align: center; }
-
-.indexStyleItemContentTitle {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 2.4rem;
-  color: #9c8b57;
-  margin: 2rem 0 1rem;
-  text-transform: uppercase; }
-
-.indexStyleItemContentText {
-  font-family: "Oswald L";
-  color: #83807f;
-  font-size: 1.6rem;
-  margin-bottom: 3rem; }
-
-.indexStyleItemContentLink {
-  font-family: "Oswald";
-  font-weight: 100;
-  color: #83807f;
-  font-size: 1.6rem; }
-
-.indexStyleItemContentLink > span {
-  color: #4a7eab; }
-
-.indexWelove {
-  display: table;
-  width: 100%; }
-
-.indexWeloveWrap {
-  display: table-row; }
-
-.indexWeloveContent,
-.indexWeloveImg {
-  display: table-cell;
-  padding: 3rem 5.6rem 4.5rem;
-  width: 50%;
-  vertical-align: top; }
-
-.indexWeloveImg {
-  background: url("../img/indexWelove.jpg") left no-repeat;
-  background-size: cover;
-  text-align: right; }
-
-.indexWeloveTitle {
-  font-family: "Oswald";
-  font-weight: 100;
-  color: #9c8b57;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  margin-bottom: 2.7rem; }
-
-.indexWeloveImg .indexWeloveTitle {
-  color: #fff; }
-
-.indexWeloveText {
-  font-family: "OpenSans";
-  font-weight: 100;
-  color: #83807f;
-  font-size: 1.6rem;
-  line-height: 1.5; }
-
-.indexWeloveText > span {
-  color: #eeb840; }
-
-.indexWeloveImgLogo {
-  float: left;
-  width: 20rem;
-  padding: 2rem;
-  position: relative;
-  right: 4rem; }
-
-.hotSpots {
-  display: table;
-  width: 100%; }
-
-.hotSpotsWrap {
-  display: table-row; }
-
-.hotSpotsGroup {
-  display: table-cell;
-  width: 50%; }
-
-.hotSpotsItem {
-  display: block;
-  width: 50%;
-  height: 36rem;
-  background-color: #fff;
-  float: left;
-  position: relative; }
-
-.hotSpotsItemContent1,
-.hotSpotsItemContent2 {
-  padding: 3.5rem 5.7rem 3rem 3rem; }
-
-.hotSpotsItemimg1:before,
-.hotSpotsItemimg2:before {
-  content: "";
-  position: absolute;
-  border: 2rem solid transparent;
-  border-right: 2rem solid #fff;
-  right: 0;
-  top: 20%; }
-
-.hotSpotsItemImg1 {
-  background-image: url(../img/hotSpotsBg1.jpg);
-  background-size: cover; }
-
-.hotSpotsItemImg2 {
-  background-image: url(../img/hotSpotsBg2.jpg);
-  background-size: cover; }
-
-.hotSpotsItemImgText {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 2.4rem;
-  color: #9c8b57;
-  text-transform: uppercase;
-  display: block;
-  padding: 1rem 3rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  height: 6rem;
-  width: 20rem;
-  text-align: center; }
-
-.hotSpotsItemContentTitle {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 3rem;
-  color: #9c8b57;
-  text-transform: uppercase;
-  margin-bottom: 2.6rem; }
-
-.hotSpotsItemContentText {
-  font-family: OpenSans;
-  font-size: 1.7rem;
-  color: #83807f;
-  line-height: 1.47; }
-
-.hotSpotsItemContentText > span {
-  color: #eeb840; }
-
-.hotSpotsTitle {
-  font-family: "Oswald";
-  font-weight: 100;
-  font-size: 3rem;
-  color: #9c8b57;
-  position: relative;
-  padding: 3rem 0 4.7rem;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #d8e1de;
   margin: 0;
-  letter-spacing: 0.08rem; }
+  padding: 0; }
 
-.hotSpotsTitle:before {
-  content: "";
+.headerMenuLink {
+  font-family: 'Futura1';
+  font-size: 2.6rem;
+  text-decoration: none;
+  color: #000;
+  margin: 0.9rem 0 0 2.3rem;
+  border-bottom: 3px solid transparent;
+  display: inline-block; }
+  .headerMenuLink:hover {
+    border-bottom-color: #000; }
+  .headerMenuLink.active {
+    font-family: Futura3;
+    border-bottom-color: #000; }
+
+.headerLang {
+  font-size: 1.1rem;
+  margin-bottom: .9rem; }
+  .headerLang.active {
+    font-family: Futura3; }
+
+.headerSocial svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #000;
+  margin-left: 1rem; }
+
+.headerSocialFB:hover svg {
+  fill: #3b5998; }
+
+.headerSocialI:hover svg {
+  fill: red; }
+
+.footerWrap {
+  display: table;
+  width: 100%;
+  max-width: 1091px;
+  padding: 1.4rem 2rem 0;
+  margin: auto;
+  box-sizing: border-box; }
+
+.burger-menu {
+  display: none;
   position: absolute;
-  height: 1px;
-  width: 10rem;
-  background-color: #9c8b57;
-  bottom: 2.9rem;
-  right: 0;
-  left: 0;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  top: .8rem;
+  right: .8rem;
+  z-index: 999; }
+
+.burger {
+  position: absolute;
+  background: #6f6f6f;
+  width: 100%;
+  height: .8rem;
+  top: 50%;
+  right: 0px;
+  margin-top: -.4rem;
+  opacity: 1; }
+
+.burger::before {
+  position: absolute;
+  background: #6f6f6f;
+  width: 4rem;
+  height: .8rem;
+  top: 1.6rem;
+  content: "";
+  display: block; }
+
+.burger::after {
+  position: absolute;
+  background: #6f6f6f;
+  width: 4rem;
+  height: .8rem;
+  bottom: 1.6rem;
+  content: "";
+  display: block; }
+
+.burger::after, .burger::before, .burger {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out; }
+
+.burger-menu.menu-on .burger::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  bottom: 0px; }
+
+.burger-menu.menu-on .burger::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 0px; }
+
+.burger-menu.menu-on .burger {
+  background: rgba(111, 111, 111, 0); }
+
+.container {
+  max-width: 1054px;
   margin: auto; }
+
+.indexImgWrap {
+  padding: 0; }
+
+.indexImg {
+  max-width: 100%; }
+
+.footerWrapCR {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle; }
+
+.footerWrapLogo {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle; }
+
+.aboutInerr {
+  display: table;
+  width: 100%; }
+
+.aboutContent,
+.aboutImg {
+  display: table-cell;
+  padding: 2rem; }
+
+.aboutContent {
+  background-color: #0042ff;
+  width: 38rem; }
+
+.aboutImg {
+  background: url(../img/aboutBg.jpg) center;
+  background-size: cover; }
+
+.aboutContentText {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.8; }
+
+.contactInerr {
+  background: transparent url("../img/contactBg.jpg") center;
+  background-size: cover; }
+
+.contactContent {
+  width: 20rem;
+  height: 62.5rem;
+  background-color: #0042ff;
+  color: #fff;
+  padding: 2rem;
+  mix-blend-mode: multiply; }
+
+.contactText {
+  font-size: 1.5rem;
+  line-height: 1.7; }
+  .contactText > a {
+    color: #fff;
+    text-decoration: none; }
