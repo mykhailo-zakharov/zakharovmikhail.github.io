@@ -234,3 +234,79 @@
   .worksNaviLink.active, .worksNaviLink:hover {
     background-color: #0042ff;
     color: #fff; }
+
+.worksWrap {
+  display: table;
+  width: 100%; }
+
+.worksWrapMiniature {
+  display: table-cell;
+  width: 35rem; }
+
+.worksWrapMiniatureItem {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  position: relative; }
+  .worksWrapMiniatureItem > img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer; }
+  .worksWrapMiniatureItem:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 66, 255, 0.7);
+    z-index: 99;
+    transition-duration: .4s;
+    opacity: 0;
+    pointer-events: none; }
+  .worksWrapMiniatureItem:hover:after {
+    opacity: 1; }
+
+.worksWrapMiniatureItem:not(:nth-child(3n)) {
+  margin-right: 2rem; }
+
+.worksWrapLarge {
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  text-align: center; }
+  .worksWrapLarge > img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh; }
+
+.btnNext,
+.btnPrev {
+  position: absolute;
+  top: 50%;
+  color: rgba(0, 66, 255, 0.7);
+  right: 3rem;
+  font-size: 3rem;
+  cursor: pointer; }
+
+.btnPrev {
+  right: auto;
+  left: 3rem; }
+
+.worksDescribe {
+  color: #000;
+  text-align: right;
+  font-size: 1.7rem;
+  padding-top: 1rem; }
