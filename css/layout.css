@@ -310,3 +310,47 @@
   text-align: right;
   font-size: 1.7rem;
   padding-top: 1rem; }
+
+#worksWrapLarge {
+  width: 100%;
+  height: 80vh; }
+
+#worksWrapLarge img {
+  max-height: 100%;
+  max-width: 100%; }
+
+#worksWrapLarge li {
+  height: 100%;
+  width: 100%;
+  display: block;
+  list-style: none;
+  margin: 0 5px 5px 0;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+#worksWrapLarge li img {
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  transition: opacity 0.4s; }
+
+#worksWrapLarge li.is-loading {
+  background-color: #fff;
+  background-image: url("http://desandro.github.io/imagesloaded/assets/loading.gif"); }
+
+#worksWrapLarge li.is-broken {
+  background-image: url("http://desandro.github.io/imagesloaded/assets/broken.png");
+  background-color: #be3730;
+  width: 120px; }
+
+#worksWrapLarge li.is-loading img,
+#worksWrapLarge li.is-broken img {
+  opacity: 0; }
+
+.buttons {
+  margin-bottom: 1.0em; }
+
+button {
+  font-size: 18px;
+  padding: 0.4em 0.8em;
+  font-family: sans-serif; }
