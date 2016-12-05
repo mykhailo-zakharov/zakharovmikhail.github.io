@@ -16,15 +16,37 @@ function Task(){
    	}
    	this.gallery = function(){
 
+   		var firstPusk = 1;
    		self.setLargeImg(0);
 
    		$(".worksWrapMiniatureImg").click(function(){
-   			// var eq = ;
+
+   			if(firstPusk){
+   				// alert("go");
+   				firstPusk = 0;
+   			
+	   // 			$(".worksWrapLarge").css("display", "table-cell");	
+				// var myScroll = new IScroll('.worksWrapMiniature', { scrollX: false, scrollY: true, mouseWheel: true });
+				$(".worksWrapMiniature").animate({
+			        width: "370px",
+			        height: "500px"
+			      }, 500 );
+
+				$(".worksWrapLarge").animate({
+			        width: "630px",
+			        height: "500px"
+			      }, 500 );
+
+				setTimeout(function(){
+					var myScroll = new IScroll('.worksWrapMiniature', { scrollX: false, scrollY: true, mouseWheel: true });
+				},700);
+
+   			}
+
+
    			eqCurrent = $(this).parent().index();
-   			// $(".worksDescribe").text( $(this).data("describe") );
-
-
    			self.setLargeImg( eqCurrent );
+
    		});
 
    		$(".btnNext").click(function(){
@@ -45,44 +67,36 @@ function Task(){
    	}
    	this.setLargeImg = function(eq){
    		var elem = $(".worksWrapMiniatureImg").eq( eq );
-   		// $(".worksWrapLargeImg").attr("src", elem.data("src") ).data("eq", eq);
-   		// $(".worksDescribe").text( elem.data("describe") );
    		self.lazyLoadImgReset();
    		self.lazyLoadImgAddImg( elem.data("src") );
 
    		$(".worksDescribe").text( elem.data("describe") );
    	}
-   	// this.lazyLoadImg = function(){
+
    		var $container = $('#worksWrapLarge');
-		// var loadedImageCount, imageCount;
 
-		this.lazyLoadImgAddImg = function(src) {
-		  // add new images
-				  var items = '<li class="is-loading"><img src="'+src+'" /></li>';
-				  $container.prepend( $(items) );
-				  // use ImagesLoaded
-				  $container.imagesLoaded()
-				    .progress( self.lazyLoadImgOnProgress );
-				    // .always( onAlways );
-				  // reset progress counter
-				  // imageCount = $container.find('img').length;
-		};
 
-		// reset container
-		this.lazyLoadImgReset = function(){
-		  $container.empty();
-		};
+	this.lazyLoadImgAddImg = function(src) {
+	  // add new images
+			  var items = '<div class="innerImg is-loading"><img src="'+src+'" /></div>';
+			  $container.prepend( $(items) );
+			  $container.imagesLoaded()
+			    .progress( self.lazyLoadImgOnProgress );
+	};
 
-		// triggered after each item is loaded
-		this.lazyLoadImgOnProgress = function( imgLoad, image ) {
-		  // change class if the image is loaded or broken
-		  var $item = $( image.img ).parent();
-		  $item.removeClass('is-loading');
-		  if ( !image.isLoaded ) {
-		    $item.addClass('is-broken');
-		  }
-		}
-   	// }
+	this.lazyLoadImgReset = function(){
+	  $container.empty();
+	};
+
+	this.lazyLoadImgOnProgress = function( imgLoad, image ) {
+	  // change class if the image is loaded or broken
+	  var $item = $( image.img ).parent();
+	  $item.removeClass('is-loading');
+	  if ( !image.isLoaded ) {
+	    $item.addClass('is-broken');
+	  }
+	}
+
 
     this.init();
 }

@@ -10,6 +10,10 @@
   :root {
     font-size: 7.9px; } }
 
+@media only screen and (max-width: 850px) {
+  :root {
+    font-size: 7.1px; } }
+
 @media only screen and (max-width: 767px) {
   .burger-menu {
     display: block; }
@@ -34,4 +38,18 @@
     display: block; }
   .headerMenuLink {
     padding: 1rem;
-    margin: 1rem; } }
+    margin: 1rem; }
+  .worksshopsItem {
+    width: 48%;
+    margin: 1%; }
+  .workshops-singleImg {
+    float: none;
+    display: block;
+    margin: 0 auto 3rem;
+    max-width: 310px; }
+  .workshops-singleItem {
+    margin: 0 3rem; } }
+
+@media only screen and (max-width: 500px) {
+  .worksshopsItem {
+    width: 98%; } }
