@@ -5,6 +5,7 @@ function Task(){
 		self.menu();
 		if( $(".works").length ){
 			this.gallery();
+			$(window).resize(function(){location.reload();});
 		}
 
 	}
@@ -22,19 +23,25 @@ function Task(){
    		$(".worksWrapMiniatureImg").click(function(){
 
    			if(firstPusk){
-   				// alert("go");
    				firstPusk = 0;
-   			
-	   // 			$(".worksWrapLarge").css("display", "table-cell");	
-				// var myScroll = new IScroll('.worksWrapMiniature', { scrollX: false, scrollY: true, mouseWheel: true });
+   				var widthContainer = $(".container").outerWidth();
+   				var widthMiniItem = $(".worksWrapMiniatureItem").outerWidth(true);
+   				var widthMiniBox = 3 * widthMiniItem;
+   				if($(window).width() < 768){var widthMiniBox = 2 * widthMiniItem;}
+   				if($(window).width() < 550){var widthMiniBox = widthMiniItem;}
+   				var widthBigBox = widthContainer - widthMiniBox;
+   				var height = $(window).height() - ($(".header").outerHeight(true) + $(".footer").outerHeight(true) + $(".worksNaviLi").outerHeight(true) + $(".works").outerHeight(true) - $(".works").height()) - 10;
+   				// console.log("height: " + height);
+   				$(".innerImg").height( height -  $(".worksDescribe").outerHeight(true) );
+
 				$(".worksWrapMiniature").animate({
-			        width: "370px",
-			        height: "500px"
+			        width: widthMiniBox,
+			        height: height
 			      }, 500 );
 
 				$(".worksWrapLarge").animate({
-			        width: "630px",
-			        height: "500px"
+			        width: widthBigBox,
+			        height: height
 			      }, 500 );
 
 				setTimeout(function(){
@@ -64,7 +71,21 @@ function Task(){
 			}
 	   		self.setLargeImg( eqCurrent );
    		});
+
+		$(".worksNaviLink").click(function(){
+			$(".worksNaviLink").removeClass("active");
+			$(this).addClass("active");
+		});
+
+		$(".worksWrapMiniatureItem").each(function(){
+			var width = $(this).find("img").width();
+			var height = $(this).find("img").height();
+			$(this).append("<div class='after' style='width:"+width+"px; height:"+height+"px;'></div>");
+		});
+
+
    	}
+   	//////end gallery
    	this.setLargeImg = function(eq){
    		var elem = $(".worksWrapMiniatureImg").eq( eq );
    		self.lazyLoadImgReset();

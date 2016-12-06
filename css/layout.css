@@ -69,7 +69,7 @@
   display: table;
   width: 100%;
   max-width: 1091px;
-  padding: 1.4rem 2rem 2rem;
+  padding: 2.4rem 2rem .5rem;
   margin: auto;
   box-sizing: border-box; }
 
@@ -291,7 +291,8 @@ main {
   text-align: right; }
 
 .worksNaviLi {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 2rem; }
 
 .worksNaviLink {
   font-weight: 400;
@@ -306,12 +307,10 @@ main {
     color: #fff; }
 
 .worksWrap {
-  display: table;
   width: 100%; }
 
 .worksWrapMiniature {
-  height: 70vh;
-  text-align: center;
+  text-align: left;
   position: relative;
   float: left;
   overflow: hidden; }
@@ -336,7 +335,7 @@ main {
     bottom: 0;
     margin: auto;
     cursor: pointer; }
-  .worksWrapMiniatureItem:after {
+  .worksWrapMiniatureItem .after {
     content: "";
     position: absolute;
     top: 0;
@@ -347,8 +346,9 @@ main {
     z-index: 99;
     transition-duration: .4s;
     opacity: 0;
-    pointer-events: none; }
-  .worksWrapMiniatureItem:hover:after {
+    pointer-events: none;
+    margin: auto; }
+  .worksWrapMiniatureItem:hover .after {
     opacity: 1; }
 
 .worksWrapLarge {
@@ -375,38 +375,46 @@ main {
 
 .worksDescribe {
   color: #000;
-  text-align: right;
-  font-size: 1.7rem;
-  padding-top: 1rem; }
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5); }
 
 #worksWrapLarge {
-  width: 100%; }
-
-#worksWrapLarge img {
-  max-height: 70vh;
-  max-width: 100%;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -ms-transition: opacity 0.4s;
-  transition: opacity 0.4s; }
-
-#worksWrapLarge .innerImg {
   width: 100%;
-  display: block;
-  list-style: none;
-  margin: 0 5px 5px 0;
-  background-position: center center;
-  background-repeat: no-repeat; }
-
-#worksWrapLarge .innerImg.is-loading {
-  background-color: #fff;
-  background-image: url("../img/loading.gif"); }
-
-#worksWrapLarge .innerImg.is-broken {
-  background-image: url("http://desandro.github.io/imagesloaded/assets/broken.png");
-  background-color: #be3730;
-  width: 120px; }
-
-#worksWrapLarge .innerImg.is-loading img,
-#worksWrapLarge .innerImg.is-broken img {
-  opacity: 0; }
+  height: 100%; }
+  #worksWrapLarge img {
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; }
+  #worksWrapLarge .innerImg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    list-style: none;
+    margin: 0 5px 5px 0;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  #worksWrapLarge .innerImg.is-loading {
+    background-color: #fff;
+    background-image: url("../img/loading1.gif"); }
+  #worksWrapLarge .innerImg.is-broken {
+    background-image: url("http://desandro.github.io/imagesloaded/assets/broken.png");
+    background-color: #be3730;
+    width: 120px; }
+  #worksWrapLarge .innerImg.is-loading img,
+  #worksWrapLarge .innerImg.is-broken img {
+    opacity: 0; }
