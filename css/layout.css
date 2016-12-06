@@ -134,6 +134,9 @@
 main {
   min-height: 77vh; }
 
+.index {
+  padding-top: 1.5rem; }
+
 .container {
   max-width: 1054px;
   margin: auto; }
