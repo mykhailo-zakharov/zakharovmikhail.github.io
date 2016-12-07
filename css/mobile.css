@@ -40,7 +40,8 @@
     display: block; }
   .headerMenuLink {
     padding: 1rem;
-    margin: 1rem; }
+    margin: 1rem;
+    font-size: 3rem; }
   .worksshopsItem {
     width: 48%;
     margin: 1%; }
@@ -64,10 +65,8 @@
     max-height: 74vh; }
   .workshops-singleItem {
     text-align: justify; }
-  .headerMenuLink {
-    font-size: 2.5rem; }
   .worksNavi {
-    text-align: left; }
+    text-align: center; }
   .worksNaviLink {
     padding: 0.2rem 0.5rem; } }
 
@@ -86,7 +85,7 @@
   .worksWrapMiniatureItem > img {
     position: static; }
   .worksNavi {
-    text-align: left; }
+    text-align: center; }
   .workshops-singleImg {
     float: none;
     margin: 0 2rem 2rem;

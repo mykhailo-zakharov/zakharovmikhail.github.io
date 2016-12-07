@@ -18,7 +18,7 @@ function Task(){
    	this.gallery = function(){
 
    		var firstPusk = 1;
-   		self.setLargeImg(0);
+   		// self.setLargeImg(0);
 
    		$(".worksWrapMiniatureImg").click(function(){
    			$(".worksWrapMiniatureItem").removeClass("active");
