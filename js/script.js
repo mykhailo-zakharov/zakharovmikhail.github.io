@@ -3,7 +3,7 @@ function Task(){
 	var eqCurrent = 0;
 	this.init = function(){
 		self.menu();
-		if( $(".works").length ){
+		if( $(".works").length & $(window).width() > 450){
 			this.gallery();
 			$(window).resize(function(){location.reload();});
 		}
@@ -21,6 +21,8 @@ function Task(){
    		self.setLargeImg(0);
 
    		$(".worksWrapMiniatureImg").click(function(){
+   			$(".worksWrapMiniatureItem").removeClass("active");
+   			$(this).parent().addClass("active");
 
    			if(firstPusk){
    				firstPusk = 0;
@@ -30,8 +32,8 @@ function Task(){
    				if($(window).width() < 768){var widthMiniBox = 2 * widthMiniItem;}
    				if($(window).width() < 550){var widthMiniBox = widthMiniItem;}
    				var widthBigBox = widthContainer - widthMiniBox;
-   				var height = $(window).height() - ($(".header").outerHeight(true) + $(".footer").outerHeight(true) + $(".worksNaviLi").outerHeight(true) + $(".works").outerHeight(true) - $(".works").height()) - 10;
-   				// console.log("height: " + height);
+   				var height = window.innerHeight - ($(".header").outerHeight(true) + $(".footerWrap").outerHeight(true) + $(".worksNaviLi").outerHeight(true) + $(".works").outerHeight(true) - $(".works").height()) - 30;
+   				// console.log( $(".header").outerHeight(true)+"|"+$(".footerWrap").outerHeight(true)+"|"+$(".worksNaviLi").outerHeight(true)+"|"+$(".works").outerHeight(true)+"|"+$(".works").height() );
    				$(".innerImg").height( height -  $(".worksDescribe").outerHeight(true) );
 
 				$(".worksWrapMiniature").animate({

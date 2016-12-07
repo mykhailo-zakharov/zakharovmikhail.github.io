@@ -51,12 +51,27 @@
     margin: 0 3rem; }
   .headerLogo {
     font-size: 2.4rem;
-    padding: 2rem 2rem 0;
+    padding: 2rem 0 0;
     display: inline-block; }
   .worksWrapLarge .btnNext,
   .worksWrapLarge .btnPrev {
-    opacity: 1; } }
+    opacity: 1; }
+  .indexImg {
+    max-height: 74vh; } }
 
 @media only screen and (max-width: 500px) {
   .worksshopsItem {
     width: 98%; } }
+
+@media only screen and (max-width: 450px) {
+  .worksWrapMiniature {
+    float: none; }
+  .worksWrapMiniatureItem {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 1rem auto; }
+  .worksWrapMiniatureItem > img {
+    position: static; }
+  .worksNavi {
+    text-align: center; } }
