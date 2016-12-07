@@ -66,9 +66,11 @@
   .workshops-singleItem {
     text-align: justify; }
   .worksNavi {
-    text-align: center; }
+    text-align: left; }
   .worksNaviLink {
-    padding: 0.2rem 0.5rem; } }
+    padding: 0.3rem 1rem 0.2rem;
+    margin: 0;
+    font-size: 2rem; } }
 
 @media only screen and (max-width: 500px) {
   .worksshopsItem {
@@ -85,7 +87,7 @@
   .worksWrapMiniatureItem > img {
     position: static; }
   .worksNavi {
-    text-align: center; }
+    text-align: left; }
   .workshops-singleImg {
     float: none;
     margin: 0 2rem 2rem;

@@ -3,9 +3,13 @@ function Task(){
 	var eqCurrent = 0;
 	this.init = function(){
 		self.menu();
-		if( $(".works").length & $(window).width() > 450){
-			this.gallery();
+		if( $(".works").length ){
+			
 			$(window).resize(function(){location.reload();});
+			
+			if( $(window).width() > 450 ){
+				this.gallery();
+			}
 		}
 
 	}
