@@ -22,7 +22,8 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 700;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
   .headerLogo > span {
     font-weight: 100; }
   .headerLogo:visited, .headerLogo:hover {
@@ -60,10 +61,10 @@
   margin-left: 1rem; }
 
 .headerSocialFB:hover svg {
-  fill: #3b5998; }
+  fill: #0042ff; }
 
 .headerSocialI:hover svg {
-  fill: red; }
+  fill: #0042ff; }
 
 .footerWrap {
   display: table;
@@ -140,7 +141,30 @@
 
 .indexImgWrap {
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .indexImgWrap:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background: url(../img/line12.jpg) repeat-X;
+    background-size: contain;
+    z-index: -1; }
+  .indexImgWrap:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    background: url(../img/lineRight.jpg) repeat-X;
+    background-size: contain;
+    z-index: -1; }
 
 .indexImg {
   max-width: 100%;
@@ -222,6 +246,8 @@
   text-decoration: none;
   vertical-align: top;
   margin: 0.5%; }
+  .worksshopsItem:hover {
+    box-shadow: 3px 2px 12px #000; }
 
 .worksshopsImg {
   width: 100%; }
@@ -395,7 +421,9 @@
   right: 0;
   left: 0;
   text-align: right;
-  background-color: white; }
+  background-color: white;
+  font-family: HelveticaWorld;
+  letter-spacing: 0.1rem; }
 
 #worksWrapLarge {
   width: 100%;

@@ -74,10 +74,6 @@ function Task(){
 	   		self.setLargeImg( eqCurrent );
    		});
 
-		$(".worksNaviLink").click(function(){
-			$(".worksNaviLink").removeClass("active");
-			$(this).addClass("active");
-		});
 
 		$(".worksWrapMiniatureItem").each(function(){
 			var width = $(this).find("img").width();
@@ -87,6 +83,10 @@ function Task(){
 
 
    	}
+		$(".worksNaviLink").click(function(){
+			$(".worksNaviLink").removeClass("active");
+			$(this).addClass("active");
+		});
    	//////end gallery
    	this.setLargeImg = function(eq){
    		var elem = $(".worksWrapMiniatureImg").eq( eq );
@@ -94,6 +94,9 @@ function Task(){
    		self.lazyLoadImgAddImg( elem.data("src") );
 
    		$(".worksDescribe").text( elem.data("describe") );
+
+		$(".worksWrapMiniatureItem").removeClass("active").eq( eq ).addClass("active");
+		// $(this).parent().addClass("active");
    	}
 
    		var $container = $('#worksWrapLarge');
