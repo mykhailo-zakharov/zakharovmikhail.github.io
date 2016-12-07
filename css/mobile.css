@@ -48,7 +48,14 @@
     margin: 0 auto 3rem;
     max-width: 310px; }
   .workshops-singleItem {
-    margin: 0 3rem; } }
+    margin: 0 3rem; }
+  .headerLogo {
+    font-size: 2.4rem;
+    padding: 2rem 2rem 0;
+    display: inline-block; }
+  .worksWrapLarge .btnNext,
+  .worksWrapLarge .btnPrev {
+    opacity: 1; } }
 
 @media only screen and (max-width: 500px) {
   .worksshopsItem {

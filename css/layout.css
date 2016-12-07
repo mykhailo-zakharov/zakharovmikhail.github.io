@@ -23,6 +23,10 @@
   letter-spacing: 0.1rem;
   font-weight: 700;
   text-decoration: none; }
+  .headerLogo:visited,
+  .headerLogo:focus {
+    color: #000;
+  }
   .headerLogo > span {
     font-weight: 100; }
   .headerLogo:visited, .headerLogo:hover {
@@ -138,7 +142,7 @@ main {
   padding-top: 1.5rem; }
 
 .container {
-  max-width: 1054px;
+  max-width: 108rem;
   margin: auto; }
 
 .indexImgWrap {
@@ -170,13 +174,13 @@ main {
 
 .aboutContent {
   background-color: #0042ff;
-  width: 49rem;
+  width: 58rem;
   max-width: 100%;
   box-sizing: border-box;
   padding: 1.1rem 1.4rem 1.5rem; }
 
 .aboutImg {
-  background: url(../img/aboutBg.jpg) center;
+  background: url(../img/works_bg.jpg) center;
   background-size: cover; }
 
 .aboutContentText {
@@ -370,11 +374,17 @@ main {
   right: 3rem;
   font-size: 3rem;
   cursor: pointer;
-  width: 2rem; }
+  width: 2rem;
+  opacity: 0;
+  transition-duration: .5s; }
 
 .btnPrev {
   right: auto;
   left: 3rem; }
+
+.worksWrapLarge:hover .btnNext,
+.worksWrapLarge:hover .btnPrev {
+  opacity: 1; }
 
 .worksDescribe {
   color: #000;
@@ -389,7 +399,9 @@ main {
 
 #worksWrapLarge {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 2rem; }
   #worksWrapLarge img {
     max-height: 100%;
     max-width: 100%;
@@ -410,7 +422,8 @@ main {
     list-style: none;
     margin: 0 5px 5px 0;
     background-position: center center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    position: relative; }
   #worksWrapLarge .innerImg.is-loading {
     background-color: #fff;
     background-image: url("../img/loading1.gif"); }
