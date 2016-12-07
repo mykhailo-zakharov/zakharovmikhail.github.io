@@ -332,7 +332,9 @@
   display: inline-block;
   padding: 0.2rem;
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  line-height: 1.4rem;
+  vertical-align: middle; }
   .worksNaviLink.active, .worksNaviLink:hover {
     background-color: #0042ff;
     color: #fff; }
@@ -422,7 +424,7 @@
   left: 0;
   text-align: right;
   background-color: white;
-  font-family: HelveticaWorld;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1rem; }
 
 #worksWrapLarge {
