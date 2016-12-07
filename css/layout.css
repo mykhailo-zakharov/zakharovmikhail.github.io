@@ -69,7 +69,7 @@
   display: table;
   width: 100%;
   max-width: 112rem;
-  padding: 2.4rem 2rem .5rem;
+  padding: 1.4rem 2rem .5rem;
   margin: auto;
   box-sizing: border-box; }
 
@@ -394,8 +394,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.5); }
+  text-align: right;
+  background-color: white; }
 
 #worksWrapLarge {
   width: 100%;
@@ -427,7 +427,8 @@
   #worksWrapLarge .innerImg.is-loading {
     background-color: #fff;
     background-image: url("../img/loading1.gif");
-    background-position: 400px; }
+    background-position: center;
+    background-size: 400px; }
   #worksWrapLarge .innerImg.is-broken {
     background-image: url("http://desandro.github.io/imagesloaded/assets/broken.png");
     background-color: #be3730;

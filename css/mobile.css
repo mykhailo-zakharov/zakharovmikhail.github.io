@@ -52,7 +52,9 @@
   .headerLogo {
     font-size: 2.4rem;
     padding: 2rem 0 0;
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    left: -2rem; }
   .worksWrapLarge .btnNext,
   .worksWrapLarge .btnPrev {
     opacity: 1; }
