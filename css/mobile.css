@@ -57,7 +57,9 @@
   .worksWrapLarge .btnPrev {
     opacity: 1; }
   .indexImg {
-    max-height: 74vh; } }
+    max-height: 74vh; }
+  .workshops-singleItem {
+    text-align: justify; } }
 
 @media only screen and (max-width: 500px) {
   .worksshopsItem {
@@ -74,4 +76,17 @@
   .worksWrapMiniatureItem > img {
     position: static; }
   .worksNavi {
-    text-align: center; } }
+    text-align: center; }
+  .workshops-singleImg {
+    float: none;
+    margin: 0 2rem 2rem;
+    max-width: none;
+    width: 90%;
+    width: calc( 100% - 4rem); }
+  .workshops-singleItem {
+    text-align: justify; }
+  .workshops-singleItem {
+    margin: 0 2rem; }
+  .burger-menu {
+    top: 1.2rem;
+    right: 2rem; } }
