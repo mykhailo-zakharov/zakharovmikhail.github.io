@@ -94,3 +94,8 @@ button:focus {
 
 textarea:focus, input:focus {
   outline: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
