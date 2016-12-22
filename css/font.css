@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/HelveticaWorld-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/HelveticaWorld-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/HelveticaWorld-Italic.ttf"); }
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 900;
+  src: url("fonts/HelveticaWorld-BoldItalic.ttf"); }
