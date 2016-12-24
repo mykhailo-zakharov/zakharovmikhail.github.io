@@ -39,10 +39,13 @@ window.onload = function(){
 
 
 $(document).ready(function() {
-	
-	$(".svg_footer").hide();
+
 
  if( $("#owl-carousel").length ) {
+
+	$(".svg_footer").hide();
+
+	$( "body" ).addClass("index-page");
 
 	   var time = 7; // time in seconds
 	  
@@ -61,7 +64,7 @@ $(document).ready(function() {
 	       afterInit : progressBar,
 	       afterMove : moved,
 	       startDragging : pauseOnDragging,
-	       // transitionStyle : "fade"
+	       transitionStyle : "fade"
 	       // transitionStyle : "fadeUp"
 	       // transitionStyle : "backSlide"
 	       // transitionStyle : "goDown"

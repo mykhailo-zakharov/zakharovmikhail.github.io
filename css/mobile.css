@@ -50,7 +50,8 @@
   .header.open {
     transform: translateX(0); }
   .header_logo-link {
-    width: 150px; }
+    width: 150px;
+    margin-bottom: 5rem; }
   .close {
     display: block; }
   .headerSocialFB {
@@ -75,7 +76,24 @@
   .stories {
     padding-right: 2.6rem; }
   .switch-map {
-    display: none; } }
+    display: none; }
+  .index_logo-link {
+    display: block; }
+  .index-page .header_logo-link {
+    display: none; }
+  .index-page .icon_menu {
+    left: auto;
+    right: 3rem; }
+  .index-page .footer .toggle-lang {
+    display: none; }
+  .index-page .header .toggle-lang {
+    display: block;
+    position: static;
+    margin-bottom: 20vh; }
+  .index-page .headerSocialFB {
+    display: none; }
+  .index-page .index .header_logo {
+    display: block; } }
 
 @media only screen and (max-width: 600px) {
   .contact-form .contac-form-item {
@@ -122,4 +140,4 @@
     bottom: 0;
     left: 3rem;
     margin: auto;
-    height: 29rem; } }
+    height: 24.4rem; } }

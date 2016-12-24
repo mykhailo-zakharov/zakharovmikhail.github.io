@@ -12,7 +12,7 @@ body {
   bottom: 0;
   width: 27.6rem;
   box-sizing: border-box;
-  padding: 1.1rem 4.3rem;
+  padding: 5.1rem 5.3rem 0 4.3rem;
   min-height: 75rem;
   background: transparent url("../img/header_shadow.png") right no-repeat;
   background-size: contain;
@@ -29,7 +29,7 @@ body {
     opacity: 0.7; }
 
 .header_logo-link {
-  width: 80%;
+  width: 100%;
   display: inline-block; }
   .header_logo-link:hover {
     opacity: 0.7; }
@@ -86,6 +86,16 @@ body {
   width: 4.6rem;
   top: 3.9rem;
   right: 5.7rem; }
+
+.index_logo-link {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 10rem; }
+
+.header .toggle-lang {
+  display: none; }
 
 .svg_footer {
   fill: grey;
