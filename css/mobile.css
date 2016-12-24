@@ -71,7 +71,11 @@
     text-align: left;
     margin-bottom: 4rem; }
   .stories-controls {
-    display: table-row; } }
+    display: table-row; }
+  .stories {
+    padding-right: 2.6rem; }
+  .switch-map {
+    display: none; } }
 
 @media only screen and (max-width: 600px) {
   .contact-form .contac-form-item {
@@ -91,6 +95,14 @@
     max-width: 300px; }
   .stories-container {
     justify-content: center; } }
+
+@media only screen and (max-width: 400px) {
+  .stories {
+    padding-right: 2.3rem;
+    padding-left: 2.3rem; }
+  .stories-filters-text {
+    display: block;
+    margin-bottom: 1.5rem; } }
 
 @media only screen and (min-width: 768px) {
   .header {

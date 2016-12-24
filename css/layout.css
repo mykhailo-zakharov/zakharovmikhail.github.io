@@ -62,7 +62,7 @@ body {
 .header_menu_link {
   display: block;
   padding: 0.9rem 0 1.3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   transition-duration: .5s; }
   .header_menu_link.active, .header_menu_link:hover {
     font-weight: 900; }
@@ -274,7 +274,8 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   padding: 1rem 1rem 1rem 0;
   font-size: 2.3rem;
-  color: #000; }
+  color: #000;
+  border-radius: 0; }
   .contact-input:focus,
   .contact-textarea:focus {
     background: rgba(0, 0, 0, 0.03); }
