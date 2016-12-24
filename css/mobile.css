@@ -1,14 +1,10 @@
 :root {
-  font-size: 10px;
+  font-size: 7.75px;
   font-family: "Helvetica"; }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1440px) {
   :root {
-    font-size: 0.7vw; } }
-
-@media only screen and (max-width: 1400px) {
-  :root {
-    font-size: 0.65vw; } }
+    font-size: 0.538vw; } }
 
 @media only screen and (max-width: 980px) {
   :root {
@@ -17,3 +13,63 @@
 @media only screen and (max-width: 767px) {
   :root {
     font-size: 6.5px; } }
+
+@media only screen and (min-width: 1500px) {
+  .what-we-do_item {
+    margin: 6.4rem auto 0; }
+  .what-we-do .title {
+    margin: 6.4rem auto 0;
+    width: 115rem; } }
+
+@media only screen and (max-width: 1023px) {
+  .contact-form,
+  .contact_details {
+    margin: 0 0 5rem 0;
+    width: auto;
+    float: none; } }
+
+@media only screen and (max-width: 767px) {
+  .contact {
+    padding: 10rem 3rem; }
+  main {
+    margin: 0; }
+  .index,
+  .preloader {
+    left: 0; }
+  .header {
+    background: #fff;
+    transform: translateX(-110%);
+    transition-duration: .5s;
+    width: 100%; }
+  .header.open {
+    transform: translateX(0); }
+  .header_logo-link {
+    width: 150px; }
+  .close {
+    display: block; }
+  .headerSocialFB {
+    float: right;
+    margin-top: 19rem; }
+  .header_menu {
+    width: 150px; }
+  .what-we-are_img-box {
+    float: none;
+    margin-bottom: 2rem; }
+  .what-we-are_content {
+    float: none; } }
+
+@media only screen and (max-width: 600px) {
+  .contact-form .contac-form-item {
+    float: none;
+    width: auto;
+    margin-left: 0; }
+  .contact_details {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 5rem; } }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    transform: translateX(0) !important; } }
