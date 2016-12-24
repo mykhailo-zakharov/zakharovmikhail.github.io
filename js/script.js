@@ -39,6 +39,8 @@ window.onload = function(){
 
 
 $(document).ready(function() {
+	
+	$(".svg_footer").hide();
 
  if( $("#owl-carousel").length ) {
 
@@ -59,7 +61,7 @@ $(document).ready(function() {
 	       afterInit : progressBar,
 	       afterMove : moved,
 	       startDragging : pauseOnDragging,
-	       transitionStyle : "fade"
+	       // transitionStyle : "fade"
 	       // transitionStyle : "fadeUp"
 	       // transitionStyle : "backSlide"
 	       // transitionStyle : "goDown"

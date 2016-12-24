@@ -15,7 +15,8 @@
     font-size: 6.5px; } }
 
 @media only screen and (min-width: 1500px) {
-  .what-we-do_item {
+  .what-we-do_item,
+  .stories-single-item {
     margin: 6.4rem auto 0; }
   .what-we-do .title {
     margin: 6.4rem auto 0;

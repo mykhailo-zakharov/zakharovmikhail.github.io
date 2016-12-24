@@ -21,3 +21,9 @@
   font-style: italic;
   font-weight: 900;
   src: url("fonts/HelveticaWorld-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'bpg_supersquare';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/bpg_supersquare_2009.ttf"); }
