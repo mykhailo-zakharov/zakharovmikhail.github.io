@@ -3,14 +3,21 @@ function Task(){
 	this.init = function(){
 
 		this.menu();
+		this.selectMenu();
 
 	}
-	
+
    	this.menu = function(){
 
    		$(".icon_menu, .close").click(function () {
 	   			$(".header").toggleClass("open");
 		});
+
+   	}
+
+   	this.selectMenu = function(){
+
+   		$( "select" ).selectmenu();
 
    	}
 
