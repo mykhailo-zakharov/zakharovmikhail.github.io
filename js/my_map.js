@@ -1,53 +1,52 @@
-// function Task(){
-// 	var self = this;
-// 	this.init = function(){
 
+function My_map() {
 
-// 	}
-//    	this.menu = function(){
-//    		$(".burger-menu").click(function () {
-// 	   			$(this).toggleClass("menu-on");
-// 	   			$(".headerContent").slideToggle();
-// 		});
-//    	}
-
-
-//     this.init();
-// }
-// $(window).ready(function(){
-// 	var task = new Task();
-// });
-
-
-
-// AIzaSyCBGdVzPnHxhIm7EJB43oX18K2mWdKSx5s
-
-function maps() {
-
-		var box = document.getElementById('container-test'),
+		var self = this,
+		box = document.getElementById('container-test'),
 		svg = document.getElementById('svg_map'),
 		BtnScale = document.getElementById('btn-scale'),
 		btnScale = 1,
 		tempDelta = 0,
 		viewBox1 = 0,
 		viewBox2 = 0,
-		viewBox3 = 2267,
-		viewBox4 = 3401,
-		viewBox1_new ,
-		viewBox2_new,
+		viewBox3 = 5200,
+		viewBox4 = 3000,
+		viewBox1_new = 0,
+		viewBox2_new = 0,
 		viewBox3_new = viewBox3,
 		viewBox4_new = viewBox4,
-		h1_fontSize = parseInt( $(".svg_h1").css("font-size") ),
-		h2_fontSize = parseInt( $(".svg_h2").css("font-size") ),
+		h1_fontSize,
+		h2_fontSize,
+		strokeWidth,
 		moveX = 0,
 		moveY = 0,
-		centerX = 1;
-		centerY = 1;
+		centerX = 1,
+		centerY = 1,
+		maxMoveX,
+		maxMoveY,
 		koefMoveX = viewBox3 / $(box).width(),
-		koefMoveY = viewBox4 / $(box).height();
+		koefMoveY = viewBox4 / $(box).height(),
+		stepX = viewBox3 *0.05,
+		stepY = viewBox4 *0.05;
 
+		this.init = function(){
+			this.mouseScroling();
+			this.mouseMove();
+			this.setFontSize();
+			// this.scroling();
+		}
 
-		//////////////////////////////////////// scroling
+	this.setFontSize = function(){
+		var koef = viewBox3 / $( box ).width();
+		h1_fontSize = Math.round( parseInt( $(".svg_h1").css("font-size") ) * koef);
+		h2_fontSize = Math.round( parseInt( $(".svg_h2").css("font-size") ) * koef);
+		strokeWidth = Math.round( parseInt( $(".oblast").css("stroke-width") ) * koef);
+		$(".svg_h1").css( "font-size", h1_fontSize );
+		$(".svg_h2").css( "font-size", h2_fontSize );
+		$(".oblast").css("stroke-width", strokeWidth);
+	}
+	this.mouseScroling = function(){
+
 		if (box.addEventListener) {
 		  if ('onwheel' in document) {
 		    // IE9+, FF17+, Ch31+
@@ -74,12 +73,17 @@ function maps() {
 
 		  btnScale = 1 - tempDelta / 1000;
 
-		  scrolling(e.deltaX, e.deltaY);
+		  self.scroling(delta);
 
-		  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+		  // e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+		  e.preventDefault();
+		  return false;
 		}
 
-		//////////////////////////////////////// move
+	}
+	
+
+	this.mouseMove = function(){
 
 		// var box = document.getElementById('box');
 
@@ -108,9 +112,10 @@ function maps() {
 		  	viewBox1_new = moveX + koefMoveX * positionX_new / btnScale;
 		  	viewBox2_new = moveY + koefMoveY * positionY_new / btnScale;
 
-		  	console.log(moveX +" " + koefMoveX +"  "+ positionX_new +"   "+ btnScale);
+		  	// console.log(moveX +" " + koefMoveX +"  "+ positionX_new +"   "+ btnScale);
 
-		  	checkMove();
+		  	
+		  	self.checkVerge();
 
 		 	
 		 	moveX = viewBox1_new;
@@ -139,65 +144,75 @@ function maps() {
 		};
 
 
+	}
 
-		////////////////////////////////////////////
 
+	this.scroling = function(delta){
 
-		function scrolling(x, y){
-
-			  if(btnScale >= 1) {
+		if(btnScale >= 1) {
 
 		  	BtnScale.innerHTML = btnScale;
 
+		  	var koeScale = 1 - (btnScale - 1);
 
-		  	viewBox3_new = viewBox3 / btnScale;
-		  	viewBox4_new = viewBox4 / btnScale;
+		  	viewBox3_new = viewBox3 * koeScale;
+		  	viewBox4_new = viewBox4 * koeScale;
 
+			if(delta < 0){
+			  	viewBox1_new = moveX + stepX ;
+			  	viewBox2_new = moveY + stepY ;
+			} else {
+				viewBox1_new = moveX - stepX ;
+			  	viewBox2_new = moveY - stepY ;
+			  	// alert();
+			}
 
-			  	viewBox1_new = centerX * ( viewBox3 - viewBox3_new ) / 2;
-
-			  	viewBox2_new = centerY * ( viewBox4 - viewBox4_new ) / 2;
-
-
-		  	checkMove();
+		  	self.checkVerge();
 
 			moveX = viewBox1_new;
 			moveY = viewBox2_new;
 		  
 		    svg.setAttribute("viewBox", viewBox1_new + " " + viewBox2_new + " " + viewBox3_new + " " + viewBox4_new );
 
-		    $(".svg_h1").css("font-size", h1_fontSize / btnScale );
+		    $(".svg_h1").css("font-size", h1_fontSize * koeScale );
+		    $(".svg_h2").css("font-size", h2_fontSize * koeScale );
+		    $(".oblast").css("stroke-width", strokeWidth * koeScale );
 
-		    $(".svg_h2").css("font-size", h2_fontSize / btnScale );
-
-			  } else {
-			  	tempDelta = 0;
-			  	moveX = 0;
-			  	moveY = 0;
-			  	svg.setAttribute("viewBox", "0 0 " + viewBox3 + " " + viewBox4 );
-			  }
-
+		} else {
+			tempDelta = 0;
+			moveX = 0;
+			moveY = 0;
+			svg.setAttribute("viewBox", "0 0 " + viewBox3 + " " + viewBox4 );
 		}
-		////////////////////////////////// check move
-		function checkMove(){
 
-		  	if( moveX > (viewBox3 - viewBox3_new) ){
-		  		moveX = viewBox3 - viewBox3_new;
-		  		console.log("check="+viewBox3 -  viewBox3_new);
+	}
+
+	
+	this.checkVerge = function(){
+
+			centerX = viewBox3 * ( btnScale  - 1);
+			centerY = viewBox4 * ( btnScale  - 1);
+
+		  	if( moveX > centerX ){
+		  		viewBox1_new = centerX;
+		  	}
+
+		  	if( moveY > centerY ){
+		  		viewBox2_new = centerY;
 		  	}
 
 			if( viewBox1_new < 0){
 				viewBox1_new = 0;
-				console.log("checkX=0");
 			}
 
 			if( viewBox2_new < 0){
 				viewBox2_new = 0;
-				console.log("checkY=0");
 			}
 
-		}
-		/////////////////////////////////////////
+				console.log("check: X( "+viewBox1_new+", "+centerX+" ) Y( "+viewBox2_new+", "+ centerY+" )");
+
+	}
+
 
 		$("#btn-plus").click(function(){
 
@@ -205,7 +220,7 @@ function maps() {
 
 			btnScale = 1 - tempDelta / 1000;
 
-			scrolling();
+			self.scroling(-100);
 
 		});
 
@@ -216,29 +231,18 @@ function maps() {
 
 			btnScale = 1 - tempDelta / 1000;
 
-			scrolling();
+			self.scroling(100);
 
 		});
 
-
-
-
+		this.init();
 }
 
 
 
 
-function map_plugin(){
 
-	      window.onload = function() {
-        // Expose to window namespase for testing purposes
-        window.zoomTiger = svgPanZoom('#svg_map', {
-          zoomEnabled: true,
-          controlIconsEnabled: true,
-          fit: true,
-          center: true,
-          // viewportSelector: document.getElementById('demo-tiger').querySelector('#g4') // this option will make library to misbehave. Viewport should have no transform attribute
-        });
-      };
+setTimeout(function(){
+	my_map = new My_map();
+},1000)
 
-}
