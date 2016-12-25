@@ -64,8 +64,8 @@ $(document).ready(function() {
 	       afterInit : progressBar,
 	       afterMove : moved,
 	       startDragging : pauseOnDragging,
-	       transitionStyle : "fade"
-	       // transitionStyle : "fadeUp"
+	       // transitionStyle : "fade"
+	       transitionStyle : "fadeUp"
 	       // transitionStyle : "backSlide"
 	       // transitionStyle : "goDown"
 	     });

@@ -1,7 +1,9 @@
-<svg id="map-test" version="1.1" id="svg_map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 5200 3000" enable-background="new 0 0 5200 3000" xml:space="preserve">
 <g>
-	<path id="GE-AB" class="oblast" d="M299.2,370.1l7.9,7.2l10.2-1.7l5.2,2.2l16.5,14.9l15.2-2.9
+	<path id="GE-AB" fill="none" stroke="#000000" stroke-width="7" d="M299.2,370.1l7.9,7.2l10.2-1.7l5.2,2.2l16.5,14.9l15.2-2.9
 		l6.2,2l8.1,4.8l5.2,1l7.8-0.1l4.7,0.6l12.1,2l7.1-0.3l5.3-3.4l5.4-4.4l3.6-2.1l14.5,9.3l15.1,2l7.2,4.5l6.4,9l7.7,3.3l8.1,2.9
 		l13.3,2.4l18.4,6.6l6,0.5l11.4-6.3l18.6-22.4l6-4l6.7-1.3l4.9-1.8l5.1-3l7.5-5.8l7.9,0.1l4.5,1.1l6.4,5.8l4.1,6.5l3.9,7.9l4.3,3.6
 		l6.8,2.7l6.2,1.5l12.9,0.6l8.8,4.1l11.2,6.2l7.5,5.3l6.8,6.8l9.1,5l15.3,6.8l9,5l9.8,7.2l26.4-0.4l9,0.8l9.7,6l3.9,3.9l1,5.2
@@ -46,7 +48,7 @@
 		l12.9-24.5l2.1-7.4l3.3-18.5l4.5-5.2l8.5-11.3l0.8-6l2.4-5.4l5-4.3l15.9-16.5l2.5-6l-0.3-4.5l-3.9-10.7l0.2-7.6l2.5-6.6l3.7-4.5
 		l3.6-0.8l13.5,3l7.5-1.2l9.3-3.6l10.9-5.1l10.8-2.5l5,0.1l7.4,2.8l14.7-0.3l5.5-2.1l5.5-4.4l7.2-2.6l9.2-0.8l10.9,1.7L299.2,370.1z
 		"/>
-	<path id="GE-AJ" class="oblast" d="M1415,2070.8l2-1.3l5.6,0.4l4,0.6l5.8,2.4l3.1,0.6l39.1,0.3
+	<path id="GE-AJ" fill="none" stroke="#000000" stroke-width="7" d="M1415,2070.8l2-1.3l5.6,0.4l4,0.6l5.8,2.4l3.1,0.6l39.1,0.3
 		l4.2,0.8l5.8,2.5l3.2,0.6l32.7,0.2l6.6,1l16.5,7.9l3.6,5.2l0.4,4.6l-0.4,19.2l0.6,2.8l1.8,2.2l2.9,0.8l5.1,0.2l20.4-0.4l5.8,1.3
 		l3.2,2.2l2.2,2.4l4.6,7.6l2.8,3.4l3.2,2l7.6,2.2l3.7,1.8l12.5,2l5.2,2.8l1.8,1.6l1.1,3.4l0.6,7.8l2.2,3l2.6,0.4l3.3-1l20.1-10
 		l6.3-1.4l7.6-2.9l3.2-0.4l26,0.2l5.3,0.2l3,0.9l16,7.6l3.7,3.8l4.1,7.6l3.4,9.7l8.8-2.6l5.7-2.5l14.4-1.5l4.8-2l5.4-1.3l38.4,0.6
@@ -66,7 +68,7 @@
 		l-0.4-2l0.4-1.9l1.9-1.7l1.2,2.2l3.4,0.3l3.3-2.2l1.1-0.8l2.3-3l1.8-2l3.4-5.6l4.1-4.4l4.6-6.7l4.4-7.8l3.1-5.5l1.7-3l1-3.6
 		l1.5-1.1l2.5-0.3l1.7-3.6l2.9-4.2l2.7-7.5l2.7-6.4l7.7-21.4l5.2-18.9l2.9-1.7l1.5-1.7l2-5l3.4-4.7l4.8-12.8l0.9-4.2l5.1-14.2
 		l1.5-6.1l3.6-24.5l0.8-13.7l1.1-15.6l-0.6-5.8l-4-17.3l-0.2-5.3l-0.8-4.1L1415,2070.8z"/>
-	<path id="GE-GU_1_" class="oblast" d="M1379.2,1878.8l-0.8-1.9l-2.5-0.6l-0.6-2.2l-1.7,0.5
+	<path id="GE-GU_1_" fill="none" stroke="#000000" stroke-width="7" d="M1379.2,1878.8l-0.8-1.9l-2.5-0.6l-0.6-2.2l-1.7,0.5
 		l-0.8-1.9l1.3-2.3h1.3h1l2.7,1.1l2,0.8l2.4-1.1l1.2-0.6l1.5-0.6l5.7-2l4.1-2h3.6l2.1-0.3l1.5-0.8l1.5-2l1-2.8l-0.8-3.9v-4.8
 		l0.8-1.7l1.9-0.6l1.5-0.6l2.5-0.8l1.8-0.8v-1.1l-2-1.7l-1.7-0.6l-2.5-0.6l-1-0.3l-1.5-1.1l-0.9-2.2l3.7-2.4l2.7-0.8l8.6-1.3
 		l5.7-2.2l4-0.6l50.9,0.4l3.9-0.4l9-2.7l14-1.6l5.8-2.2l11.2-2l11.8-5.4l4.2-1.3l36,0.1l4.3-0.8l4.8-2.1l15.4-2.6l9.2,5l10.7,1.6
@@ -85,7 +87,7 @@
 		l-0.3-14.5l0.4-5.3l-1.9-4.2l-2.3-10l0.3-3.6l1.2-1.4l1.3-7.8l-0.8-0.3l-1.7,3.9l-0.6,4.4l-1.5,0.6l-3.9-6.2l-1.3-4.4l-3.6-1.1
 		l-1.5-3.6l-2.7-3.9l-1.3-2.8l-5.2-12l-1.7-7l-6.9-12l-1.7-3l-0.4-2.8l-2.3-3.6l-1.1-2.9l-2.5-3v-1.7l1-2h1.7l1.5,0.3l-0.4-2.8
 		l0.2-0.8l1.1-0.8h1v2.8l2.1,5.3l0.6,2v3.4l1.5,2l1,2.8v1.4l-0.8,1.1l-0.6,3.1l2.7,1.7l1.5,0.3l0.6-1.4l2.4,0.5l1.8,4.8"/>
-	<path id="GE-IM" class="oblast" d="M2047.8,1444.1l8.1,9.7l1.8,4.8l-0.1,9.3l-0.8,2.9l-2.8,6.6
+	<path id="GE-IM" fill="none" stroke="#000000" stroke-width="7" d="M2047.8,1444.1l8.1,9.7l1.8,4.8l-0.1,9.3l-0.8,2.9l-2.8,6.6
 		l-0.5,11.3l1.1,6l5.7,7.8l1.2,3.8l0.2,18.6l-0.8,9l8.1,1l7.6-0.6l5.7-2.4l7.2-1.8l4.8-2.1l7.3-1.7l7.2-3.4l4-3.4l6.8-13.3l2-1.8
 		l2.7-1.1l7.7,0.2l7.4,3.1l9.5,1.3l3.3,1.9l8.1,7.4l1.5,1l3.9,1.1h6.3l7.8-2.9l6.8-1l1.7-0.7l1.4-1.6l2-10.1l2.7-7.8l1.3-2.3l3.1-1
 		l2.7,0.2l14.2,5.7l1.2,1.1l3.5,6.2l4.2,4.3l1.7,1.1l9.6,1.8l1.1,0.6l0.4,1l9,2.8l8.1,5.8l6.5,3.7l33.7,33.2l3.5,4.8l1.8,7.2
@@ -113,7 +115,7 @@
 		l8.7-1.3l2.2-1.7l1-3.6l0.1-6.3l-0.6-6.5l-1.3-4.8l6.9-12.8l6.5-10l7.1-8.8l6.5-12.9l6-7.7l18.6-36.7l8.3-8.2l6.6-3.6l3.1-2.4
 		l14-13.5l4.7-5.2l4.3-7.3l10-10.1l2.4-3.1l1-2.7l0.4-3.9l-0.3-42.5l0.3-4.9l1-2.6l2.5-2.5l12-5.6l2.1-1.6l1.5-2.2l1-5l-0.1-19.1
 		l1.1-3.9l4.7-5l7.4-4.1l3.7-3.3l2.4-3.2l5.3-11.2l1.7-2l2.2-1.5l6.2-1l29.2,0.3l4.9-1.3l6.2-4.6l3.5-1.5l9.1-0.4L2047.8,1444.1z"/>
-	<path id="GE-KA" class="oblast" d="M5064.7,2864l-15.3-0.4l-6,5.1l-8.5-0.9l-11.9-13.7l-17.2-6.9
+	<path id="GE-KA" fill="none" stroke="#000000" stroke-width="7" d="M5064.7,2864l-15.3-0.4l-6,5.1l-8.5-0.9l-11.9-13.7l-17.2-6.9
 		l-17.9-4.3l-14.5,10.3l-21.3,30.7l-10.3,19.7l-10.2,2.5l-17.1-22.7l-3.4-21.3l-17.1-6.9l-16.3,8.6h-13.7l-23.4-29.5l-10.8-15.8
 		l-23.9-29.1l-22.2-20.5l-43.6-1.7l-29.9,3.4l-17.1-8.5h-11.9l-3.9,4.6l-14,3.7l-5.3,19.4l-10.2,5.7l-12.1-4.5l-9.3-1.7l-19.3,1.1
 		l-16.8-1.8l-6.9,2l-14.8,2.4l-24.3-1.6l-19.4-10.9l-15.8-14.2l-17.4-9.3l-12.7-5.9l-9-2.4l-18,0.7l-11.1-2.2l-13.9-5.3l-15.3-11.9
@@ -153,7 +155,7 @@
 		l-1.1,4.6l0.4,2.5l5.1,1.1l7.8-2.4l3.6,1.1l1,2.6l-2.6,2.5l0.9,4.1l2,3.7l-1.7,6.1l3,5.2l5,4.8l1,3.1l-1.7,4.1l2,0.8l17.6,1.5
 		l4.1,5.4l0.3,4.4l-3.6,3.9l-7.2,3.8l-7.6,11l-4.3,4.1l-0.7,20.3l-13.1,13.3l-2.8,7.4l-5.3,5.9l-7.9,11.9l1.7,9.8l4.2,6.7l2.2,5.6
 		l-2.7,2.5v11.6l-4.9,2.6l-2.5,7.7l1.5,29.7l-5.3,8.4l-0.5,7.1L5064.7,2864z"/>
-	<path id="GE-KK" class="oblast" d="M3755.6,2204.1l2.4-0.8l3.7-2.7l10.9-10.4l3.7-4.4l1.2-4.6
+	<path id="GE-KK" fill="none" stroke="#000000" stroke-width="7" d="M3755.6,2204.1l2.4-0.8l3.7-2.7l10.9-10.4l3.7-4.4l1.2-4.6
 		l0.1-14.6l1.1-5.5l4.1-7.9l5.5-6.8l2.6-4.9l5.3-7l2.4-4.7l2.5-2.3l2.6-0.6l2.6,0.5l4.6,2.1l6.4,1.7l13.7,6.6l5,0.6l19.6,0.4
 		l13.4,5.8l2.5-0.4l6.8-4.8l7.7-3.2l0,0l5.8,4.2l8.5,8.8l11.1,21.6l5.4,6.9l3.2,5.8l8.9,10l5.8,12l2.3,2.6l2.4,1.3l3.7,0.3l2.8-0.6
 		l4.6-2.2l2.9-0.7l16.6-0.4l5.6,0.6l1.5,0.9l1,1.4l1.3,4.8l2.1,4.7l1.7,7.2l10.7,21.3l0.6,4.9l0.3,19.2l3,7.4l1.6,10.2l2.2,4.6
@@ -187,7 +189,7 @@
 		l16.1-7.6l5.8-3.4l1.7-1.8l3.5-5.7l3.7-7.9l1.5-10.2l2.7-6.4l1.5-9.3l2.4-5l-0.1-2.4l-1.9-1.7l-3.6-0.5l-9.3,0.2l-4.8,1.3l-3,3
 		l-5.3,11.1l-3.5,4.6l-6.5,5.8l-2.7,1.2l-3,0.5l-13.5-0.1l-6-0.9l-16.1-7.9l-7.2-5.3l-6.3-3.6l-2.2-2.7l-0.8-2.8v-14.2l-0.6-5
 		l-8.1-16.8l-2.4-3.1l-3.7-3.3l-11.7-6l-1.1-1.3l-0.6-2.5l0.6-3.6l2.3-3.2l3.7-3.2l5.9-2.9l4.7-3.7l8.6-8.6L3755.6,2204.1z"/>
-	<path id="GE-MM" class="oblast" d="M3870.5,1267.1l28.1,4l15.5-4.5l20.1-4.6l19.2,1.9l8.3,3.9
+	<path id="GE-MM" fill="none" stroke="#000000" stroke-width="7" d="M3870.5,1267.1l28.1,4l15.5-4.5l20.1-4.6l19.2,1.9l8.3,3.9
 		l7.1,7.2l7.6,12.3l15.2,15.1l18.1,25l18.6,23.6l6.4,6.4l18.6,14.9l5.1,7.8l4.2,23.4l1.2,2.7l0,0l-3.6,4.3l-2.9,5.6l-9.2,10.2
 		l-6.5,12.9l-5.9,7.7l-12.4,24.6l0.1,5.7l2.7,6.4l1.7,6.3l2.2,4.7l0.8,4l0.3,32.5l-0.7,5.7l-2.5,3.6l-7.1,4.1l-12,10.9l-6.7,3.6
 		l-3.1,2.4l-2,2.2l-1.9,3.4l-0.6,6l0.5,22.4l0.8,2.7l6,11.8l1.5,4.4l2.9,5.8l1.5,8.8l2.5,5.7l0.5,2.8v3.9l-1.1,4.6l-8.1,15.7
@@ -219,7 +221,7 @@
 		l11.2,0.2l24.6,3.4l9.7,0.4l6.1-1.8l8.4-3.8l8.3-5l15.8-13l13.2-8.6l13-5.8l11.2-2.4l12.8,0.4l59.5,7.5l19.6-2l12.4-3.2l12.6-1.4
 		l18.7,4.4l7.6,3.6l7.1,4.4l4.5,5.9l5.9,5.7l5,6.2l14.3,77.8l4.9,10.8l4.1,3.6l7.1,4.4l7.2,0.8l4.4-0.6l11.1-6.5l14.8-35.7
 		l10.6-35.3l14.3-23.7l6.7-9.4l6.7-7.5l6.9-5.5l10.1-3l10.7-2.1l16.1-0.8l20.6,4.3l12.1,4l18.5,14.9l29.5,29.2L3870.5,1267.1z"/>
-	<path id="GE-RL" class="oblast" d="M2604.6,1072.6l2.2,0.1l9.6-2.5l7.7-3.2l14.9-0.8l19.4,1.5
+	<path id="GE-RL" fill="none" stroke="#000000" stroke-width="7" d="M2604.6,1072.6l2.2,0.1l9.6-2.5l7.7-3.2l14.9-0.8l19.4,1.5
 		l27.3,3.6l18.1,7.9l6,5.8l6.7,4.7l8.4,2.4l19.6,1.3l6.3,1l7.2,2.2l12.1,6.9l15.3,12.5l4.8,4.7l2.8,5.6l2.9,10.5l3.2,4.7l6,4.7
 		l6,5.9l9.2,11.9l3.7,1.7l4.2,1l11.2-3.1l7.2,1.5l6.7,2.6l7.9,6.4l6.7,9.4l10.6,7.8l38.7,15.8l12.5,7.8l6.2,8l3.4,7l1.1,7l-1,10.2
 		l-27.6,55.1l-8.6,7.6l-5,3.2l-4.9,1.8l-3.6,5.5l-3.3,3.9l-1.7,3.2l-0.5,3.7l0.9,8.1l22.4,33.5l6.7,7l4.4,0.3l3.7-0.4l14.4-5.7
@@ -245,7 +247,7 @@
 		l5.6-2.5l6.4-1.6l2.7-1.3l6.2-5.5l3.6-5l0.9-6.7l-0.3-38.2l0.3-3l1.3-2.5l1.4-0.9l16.1-5.5l4.1-6.3l2.4-8.9l3.5-7.3l2.4-3.2
 		l4.4-3.8l6.5-3.5l11.6-10.9l7.8-4.4l6.9-6.4l4.3,3.2l6,3l0,0l2.9,2.5l9.1,2.6l43.1,10.2l44,20.8l6.7,7.1l10.2,4.7L2604.6,1072.6z"
 		/>
-	<path id="GE-SJ" class="oblast" d="M2656.5,2056.9l6.7-0.7l7.7-2.9l4.2-0.3l4.2,0.5l14.7,6.9
+	<path id="GE-SJ" fill="none" stroke="#000000" stroke-width="7" d="M2656.5,2056.9l6.7-0.7l7.7-2.9l4.2-0.3l4.2,0.5l14.7,6.9
 		l14.4,0.7l4,0.9l3.4,2.2l6.9,6.2l2.6,1.6l3,0.8l8.3,0.4l4.1,0.7l16.1,7.7l2.6,2.3l1.6,3.4l0.1,15.9l0.9,5.1l1.6,2.5l2.7,2.8
 		l9.1,5.3l4.6,5.1l1,2.9l1,8.1l2.2,5.8l1.1,7.6l1.2,2.4l2.5,1.3l2.9,0.3l38.1-0.1l-0.4,7.2l0.4,6.3l2.7,7.7l1,6.6l0.6,1.7l1.3,1.3
 		l3.2,0.9l13.6,0.6l9,4.1l4.1,3l14.1,13.7l4.5,2.2l18.5,0.4l5.1-0.4l2.7-0.8l13.3-6.7l29.6,0.1l8.5,1l5.7,2.4l6.4,1.7l4.8,2.1
@@ -275,7 +277,7 @@
 		l20.4-0.3l10.8-3.4l25.3-0.3l9.8-3.2l9.5-0.8l4.4-1l8.2,4.6l9.5,4.4l10-4.3l44.8-21.8l7.2-1.7l5.7-2.5l6.4-1.4l4.8-2.2l7.3-1.7
 		l4.8-2.2l7.3-1.7l4.8-2.2l9.5-1.2l2.7-0.8l16.1-7.8l10.2-8.9l8.9-4.4l2.7-0.8l8.6-1l6.5-2.5l10.4-1.5l4.1-2.7l11.1-10.4l8.9-4.5
 		l2.7-0.8l8.6-1l6.5-2.6L2656.5,2056.9z"/>
-	<path id="GE-SK" class="oblast" d="M3227.5,1343.6l3,8l1.5,10.4l7.9,16l2.2,3l12.6,12.9l5,3.6
+	<path id="GE-SK" fill="none" stroke="#000000" stroke-width="7" d="M3227.5,1343.6l3,8l1.5,10.4l7.9,16l2.2,3l12.6,12.9l5,3.6
 		l5,0.9l16.6,0.4l10.9,3.7l2.2,1.3l1.3,3.3l0.5,14.1l4.7,9.8l4.9,6.2l3.1,5.5l1.8,1.8l2.4,1.3l7.2,1.8l6.5,3.9l4.2,7.3l2.1,8
 		l4.6,7.1l-6.7,5.4l-6.4,6l-3.6,4.4l-0.9,2.7l-0.4,10.6l-1.1,3.5l-2.4,2.5l-6.9,3.9l-3.9,4.8l-2.6,7.7l-2.7,5.6l-0.5,5.5l0.9,3.4
 		l1.2,1.1l7.2,2.3l4.3,2.4l1.8,1.8l0.8,3.6l0.4,12.1l2.6,6.7l0.6,2.9l0.3,11.1l1.3,4.4l5.5,3.7l12.2,5.7l2.9,2l1.7,2.1l3.7,7.1
@@ -306,7 +308,7 @@
 		l2.8-3.2l1.9-7.1l2.4-5.7l1.1-8.5l2.7-6.4l0.5-4.6l-0.5-2.8l-2.5-5.5l-1.7-6.3l-2.4-5.7l-0.8-6l0,0l17,5.2l12.6,6.5l5.8,0.1
 		l11.4-3.4l7.2-6.6l6.9-8.1l19.8-19.7l7.3-6.4l6.5-3.2l19,2.4l20.1-6.2l12.9-5.2l7-1l4.9,0.3l11.1,4.4l10.7-1l7.2-2.4l8.2-5.5l4.4-2
 		L3227.5,1343.6z"/>
-	<path id="GE-SZ" class="oblast" d="M1328.1,1771.2l-3.7-4.8l-3.9-2l-3.3-0.3l-1.3-1.7l-1-1.1
+	<path id="GE-SZ" fill="none" stroke="#000000" stroke-width="7" d="M1328.1,1771.2l-3.7-4.8l-3.9-2l-3.3-0.3l-1.3-1.7l-1-1.1
 		l-2.7-1.7l-1.3-0.8v-2l1.7-0.6l2.7-3.9l2.9-8.7l1-16l-2.9-21l-1.1-4.8l-4.1-12.3l-2.9-12.6l-2.7-10.4l-4.4-13.5l-4.2-11.8l-2.5-9.5
 		l-3.7-10.4l-0.8-3.9l-1.3-3.9l-2.3-3.4l-3.1-7.6l-1.8-6.5l-3.6-1.4l-5.7-5.6l-5.8-2.8l-3.7-3.1l-3.3-1.7l-2.3-1.1l0.8-3.9v-3.1
 		l1.3-3.1l1-3.4l2.5-0.3l2.3-0.6h5.4l2.3-0.6l2.3-0.8l-0.4-2.2l-1.3,0.3l-1.5,0.3l-1.5,1.4l-1.5,0.6l-4.8-0.6h-1.3l-3.7,2l-1.7,4.8
@@ -346,7 +348,7 @@
 		l-3.7-3.4l-1.7-4.4l-2.7-2.8l-4.6-6.7l-1.3-2l-3.1-4.2l-2.3-2l-1.5-2.8l-1-10.9l-1.5-2.8l-0.8-0.6l-4.4-0.8l1-1.1l0.8-1.7l1.1-0.8
 		l1.6-0.3l-0.2-1.4l-2.7,0.6l0.4-1.4l1.5-1.4l2.3-0.3l0.6-0.8l-0.4-1.7l-2.7-0.8l0.4-5l-1.8-4.8l-2.1-3.6l-4.4-6.2l0.4-2.8l2.1-5
 		l3.3-3.9l0.8-2.5l2.1-2.8l1.5-0.8"/>
-	<path id="GE-TB" class="oblast" d="M3597,2268.4l4.3-11.6l4.4-4.8l7.4-3.9l9-2.2l4.4-2.4l1.7-1.9
+	<path id="GE-TB" fill="none" stroke="#000000" stroke-width="7" d="M3597,2268.4l4.3-11.6l4.4-4.8l7.4-3.9l9-2.2l4.4-2.4l1.7-1.9
 		l0.8-2.7l-0.1-3.9l-0.8-3l-2.7-5.5l-0.6-4l0.4-3.9l1.4-2.3l5.8-3.4l3.6-0.8l4.7,0.7l10.1,5l2.3,0.6l2.2-0.5l6.3-2.9l6.4-5l5.5-2.9
 		l2.5-2.4l4.4-8.6l1.7-7.2l3.7-8l3.3-5.7l1.8-1.5l2.4-0.1l5.2,2.4l6.4,1.6l8.1,3.9l3.7,2.8l11.3,10.7l8.8,4.5l2.7,0.8l8.7,1l7.4,2.7
 		l0,0l-4.4,6.7l-8.6,8.6l-4.7,3.7l-5.9,2.9l-3.7,3.2l-2.3,3.2l-0.6,3.6l0.6,2.5l1.1,1.3l11.7,6l3.7,3.3l2.4,3.1l8.1,16.8l0.6,5v14.2
@@ -357,180 +359,177 @@
 </g>
 <g>
 	<rect x="706.1" y="761.7" fill="none" width="650" height="115.7"/>
-	<text transform="matrix(1 0 0 1 855.4465 818.9976)" class="svg_h1">Abkhazeti</text>
+	<text transform="matrix(1 0 0 1 855.4465 818.9976)" font-family="'ArialMT'" font-size="80">Abkhazeti</text>
 </g>
 <g>
 	<rect x="1424.3" y="2246.4" fill="none" width="650" height="115.7"/>
-	<text transform="matrix(1 0 0 1 1633.6453 2303.6841)" class="svg_h1">Adjara</text>
+	<text transform="matrix(1 0 0 1 1633.6453 2303.6841)" font-family="'ArialMT'" font-size="80">Adjara</text>
 </g>
 <g>
 	<rect x="1389" y="1983.8" fill="none" width="650" height="68.5"/>
-	<text transform="matrix(1 0 0 1 1616.2141 2041.0295)" class="svg_h1">Guria</text>
+	<text transform="matrix(1 0 0 1 1616.2141 2041.0295)" font-family="'ArialMT'" font-size="80">Guria</text>
 </g>
 <rect x="1285.9" y="900.3" fill="none" width="1159" height="397.8"/>
-<text transform="matrix(1 0 0 1 1671.9216 957.5692)">
-	<tspan x="0" y="0" class="svg_h1">Samegrelo </tspan>
-	<tspan x="-53.3" y="96" class="svg_h1">Zemo Svaneti</tspan>
-</text>
+<text transform="matrix(1 0 0 1 1671.9216 957.5692)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="80">Samegrelo </tspan><tspan x="-53.3" y="96" font-family="'ArialMT'" font-size="80">Zemo Svaneti</tspan></text>
 <rect x="2080.6" y="860.4" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 2133.8193 889.0046)" class="svg_h2">Mestia</text>
+<text transform="matrix(1 0 0 1 2133.8193 889.0046)" font-family="'ArialMT'" font-size="40">Mestia</text>
 <rect x="1534.4" y="1449.5" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1580.8728 1478.1821)" class="svg_h2">Zugdidi</text>
+<text transform="matrix(1 0 0 1 1580.8728 1478.1821)" font-family="'ArialMT'" font-size="40">Zugdidi</text>
 <rect x="1377.7" y="1625.6" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1438.6537 1654.285)" class="svg_h2">Khobi</text>
+<text transform="matrix(1 0 0 1 1438.6537 1654.285)" font-family="'ArialMT'" font-size="40">Khobi</text>
 <rect x="1232.3" y="1338.7" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1308.8491 1367.3622)" class="svg_h2">Gali</text>
+<text transform="matrix(1 0 0 1 1308.8491 1367.3622)" font-family="'ArialMT'" font-size="40">Gali</text>
 <rect x="1140.8" y="1166.6" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1145.1158 1195.2483)" class="svg_h2">Ochamchira</text>
+<text transform="matrix(1 0 0 1 1145.1158 1195.2483)" font-family="'ArialMT'" font-size="40">Ochamchira</text>
 <rect x="1298.9" y="1086.8" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1318.7441 1115.3982)" class="svg_h2">Tqvarcheli</text>
+<text transform="matrix(1 0 0 1 1318.7441 1115.3982)" font-family="'ArialMT'" font-size="40">Tqvarcheli</text>
 <rect x="1212.3" y="988.2" fill="none" width="224.2" height="56.9"/>
-<text transform="matrix(1 0 0 1 1281.0568 1016.8022)" class="svg_h2">Otap</text>
+<text transform="matrix(1 0 0 1 1281.0568 1016.8022)" font-family="'ArialMT'" font-size="40">Otap</text>
 <rect x="1120.2" y="914.2" fill="none" width="203.1" height="48.6"/>
-<text transform="matrix(1 0 0 1 1182.817 942.8643)" class="svg_h2">Lata</text>
+<text transform="matrix(1 0 0 1 1182.817 942.8643)" font-family="'ArialMT'" font-size="40">Lata</text>
 <rect x="1266" y="877.9" fill="none" width="422.4" height="66.6"/>
-<text transform="matrix(1 0 0 1 1372.6766 906.5811)" class="svg_h2">Omarishara</text>
+<text transform="matrix(1 0 0 1 1372.6766 906.5811)" font-family="'ArialMT'" font-size="40">Omarishara</text>
 <rect x="861.8" y="914.2" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 896.0771 942.8643)" class="svg_h2">Sukhumi</text>
+<text transform="matrix(1 0 0 1 896.0771 942.8643)" font-family="'ArialMT'" font-size="40">Sukhumi</text>
 <rect x="551.8" y="798.5" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 587.1329 827.1446)" class="svg_h2">Gudauta</text>
+<text transform="matrix(1 0 0 1 587.1329 827.1446)" font-family="'ArialMT'" font-size="40">Gudauta</text>
 <rect x="293.8" y="721.8" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 328.0579 750.4329)" class="svg_h2">Pitsunda</text>
+<text transform="matrix(1 0 0 1 328.0579 750.4329)" font-family="'ArialMT'" font-size="40">Pitsunda</text>
 <rect x="160.5" y="566.1" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 217.0692 594.7234)" class="svg_h2">Gagra</text>
+<text transform="matrix(1 0 0 1 217.0692 594.7234)" font-family="'ArialMT'" font-size="40">Gagra</text>
 <rect x="577.9" y="583.6" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 634.4139 612.2376)" class="svg_h2">Pskhu</text>
+<text transform="matrix(1 0 0 1 634.4139 612.2376)" font-family="'ArialMT'" font-size="40">Pskhu</text>
 <rect x="1244" y="1553.8" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1290.5148 1582.3917)" class="svg_h2">Anaklia</text>
+<text transform="matrix(1 0 0 1 1290.5148 1582.3917)" font-family="'ArialMT'" font-size="40">Anaklia</text>
 <rect x="1252.9" y="1750.5" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1330.5757 1779.1487)" class="svg_h2">Poti</text>
+<text transform="matrix(1 0 0 1 1330.5757 1779.1487)" font-family="'ArialMT'" font-size="40">Poti</text>
 <rect x="1627.9" y="1653.1" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1678.8611 1681.7858)" class="svg_h2">Senaki</text>
+<text transform="matrix(1 0 0 1 1678.8611 1681.7858)" font-family="'ArialMT'" font-size="40">Senaki</text>
 <rect x="1411" y="1868.9" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1426.3721 1897.5862)" class="svg_h2">Lanchkhuti</text>
+<text transform="matrix(1 0 0 1 1426.3721 1897.5862)" font-family="'ArialMT'" font-size="40">Lanchkhuti</text>
 <rect x="1846.7" y="2094" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1867.6306 2122.6104)" class="svg_h2">Bakhmaro</text>
+<text transform="matrix(1 0 0 1 1867.6306 2122.6104)" font-family="'ArialMT'" font-size="40">Bakhmaro</text>
 <rect x="1534.4" y="2069.9" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1570.8823 2098.5752)" class="svg_h2">Ozurgeti</text>
+<text transform="matrix(1 0 0 1 1570.8823 2098.5752)" font-family="'ArialMT'" font-size="40">Ozurgeti</text>
 <rect x="1377.7" y="2173.8" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1417.5305 2202.4604)" class="svg_h2">Kobuleti</text>
+<text transform="matrix(1 0 0 1 1417.5305 2202.4604)" font-family="'ArialMT'" font-size="40">Kobuleti</text>
 <rect x="1260.2" y="2337" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1310.1121 2365.6428)" class="svg_h2">Batumi</text>
+<text transform="matrix(1 0 0 1 1310.1121 2365.6428)" font-family="'ArialMT'" font-size="40">Batumi</text>
 <rect x="1489.8" y="2350.5" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1555.207 2379.1172)" class="svg_h2">Keda</text>
+<text transform="matrix(1 0 0 1 1555.207 2379.1172)" font-family="'ArialMT'" font-size="40">Keda</text>
 <rect x="1739.4" y="2390.4" fill="none" width="224.2" height="79.9"/>
-<text transform="matrix(1 0 0 1 1800.3435 2419.0422)" class="svg_h2">Khulo</text>
+<text transform="matrix(1 0 0 1 1800.3435 2419.0422)" font-family="'ArialMT'" font-size="40">Khulo</text>
 <rect x="1733.4" y="1638.1" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1898.6562 1666.7097)" class="svg_h2">Tskhaltubo</text>
+<text transform="matrix(1 0 0 1 1898.6562 1666.7097)" font-family="'ArialMT'" font-size="40">Tskhaltubo</text>
 <rect x="1695.7" y="1784.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1867.6309 1813.198)" class="svg_h2">Samtredia</text>
+<text transform="matrix(1 0 0 1 1867.6309 1813.198)" font-family="'ArialMT'" font-size="40">Samtredia</text>
 <rect x="1383.3" y="1926.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1538.627 1955.28)" class="svg_h2">Chokhatauri</text>
+<text transform="matrix(1 0 0 1 1538.627 1955.28)" font-family="'ArialMT'" font-size="40">Chokhatauri</text>
 <rect x="2065.6" y="1984.5" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2255.3762 2013.1398)" class="svg_h2">Bagdadi</text>
+<text transform="matrix(1 0 0 1 2255.3762 2013.1398)" font-family="'ArialMT'" font-size="40">Bagdadi</text>
 <rect x="1940.1" y="1566.2" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2145.4644 1594.8163)" class="svg_h2">Tkibuli</text>
+<text transform="matrix(1 0 0 1 2145.4644 1594.8163)" font-family="'ArialMT'" font-size="40">Tkibuli</text>
 <rect x="1982.8" y="1695" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2185.8826 1723.6428)" class="svg_h2">Kutaisi</text>
+<text transform="matrix(1 0 0 1 2185.8826 1723.6428)" font-family="'ArialMT'" font-size="40">Kutaisi</text>
 <rect x="2389.2" y="1638.1" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2576.7319 1666.7097)" class="svg_h2">Chiatura</text>
+<text transform="matrix(1 0 0 1 2576.7319 1666.7097)" font-family="'ArialMT'" font-size="40">Chiatura</text>
 <rect x="2245.9" y="1824.9" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2421.2085 1853.5402)" class="svg_h2">Zestaponi</text>
+<text transform="matrix(1 0 0 1 2421.2085 1853.5402)" font-family="'ArialMT'" font-size="40">Zestaponi</text>
 <rect x="1541.1" y="1338.7" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1691.9189 1367.3623)" class="svg_h2">Tsalenjhikha</text>
+<text transform="matrix(1 0 0 1 1691.9189 1367.3623)" font-family="'ArialMT'" font-size="40">Tsalenjhikha</text>
 <rect x="1383.3" y="1239.5" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1604.2423 1268.163)" class="svg_h2">Jvari</text>
+<text transform="matrix(1 0 0 1 1604.2423 1268.163)" font-family="'ArialMT'" font-size="40">Jvari</text>
 <rect x="1607.6" y="1071.7" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1805.094 1100.3224)" class="svg_h2">Khaishi</text>
+<text transform="matrix(1 0 0 1 1805.094 1100.3224)" font-family="'ArialMT'" font-size="40">Khaishi</text>
 <rect x="1733.4" y="1184.5" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 1920.873 1213.1619)" class="svg_h2">Lentekhi</text>
+<text transform="matrix(1 0 0 1 1920.873 1213.1619)" font-family="'ArialMT'" font-size="40">Lentekhi</text>
 <rect x="2065.6" y="1442.5" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2212.0366 1471.0941)" class="svg_h2">Khvanchkara</text>
+<text transform="matrix(1 0 0 1 2212.0366 1471.0941)" font-family="'ArialMT'" font-size="40">Khvanchkara</text>
 <rect x="2354.8" y="1406.1" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2521.2268 1434.7881)" class="svg_h2">Ambrolauri</text>
+<text transform="matrix(1 0 0 1 2521.2268 1434.7881)" font-family="'ArialMT'" font-size="40">Ambrolauri</text>
 <rect x="4114.8" y="1925.3" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4314.5762 1953.9359)" class="svg_h2">Qvareli</text>
+<text transform="matrix(1 0 0 1 4314.5762 1953.9359)" font-family="'ArialMT'" font-size="40">Qvareli</text>
 <rect x="4377.9" y="2042.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4548.7495 2070.9998)" class="svg_h2">Lagodekhi</text>
+<text transform="matrix(1 0 0 1 4548.7495 2070.9998)" font-family="'ArialMT'" font-size="40">Lagodekhi</text>
 <rect x="4361.1" y="2355.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4568.6201 2384.2642)" class="svg_h2">Tsnori</text>
+<text transform="matrix(1 0 0 1 4568.6201 2384.2642)" font-family="'ArialMT'" font-size="40">Tsnori</text>
 <rect x="3802.5" y="2042.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4012.3237 2071)" class="svg_h2">Telavi</text>
+<text transform="matrix(1 0 0 1 4012.3237 2071)" font-family="'ArialMT'" font-size="40">Telavi</text>
 <rect x="3763.7" y="1872.2" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3947.8809 1900.8177)" class="svg_h2">Akhmeta</text>
+<text transform="matrix(1 0 0 1 3947.8809 1900.8177)" font-family="'ArialMT'" font-size="40">Akhmeta</text>
 <rect x="3880.7" y="1474.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4082.6807 1503.0314)" class="svg_h2">Archilo</text>
+<text transform="matrix(1 0 0 1 4082.6807 1503.0314)" font-family="'ArialMT'" font-size="40">Archilo</text>
 <rect x="3661.7" y="2443.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3858.1055 2472.2468)" class="svg_h2">Rustavi</text>
+<text transform="matrix(1 0 0 1 3858.1055 2472.2468)" font-family="'ArialMT'" font-size="40">Rustavi</text>
 <rect x="3557.6" y="2218.9" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3769.5718 2247.5444)" class="svg_h2">Tbilisi</text>
+<text transform="matrix(1 0 0 1 3769.5718 2247.5444)" font-family="'ArialMT'" font-size="40">Tbilisi</text>
 <rect x="3253.4" y="2605.3" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3454.3088 2633.9463)" class="svg_h2">Kazreti</text>
+<text transform="matrix(1 0 0 1 3454.3088 2633.9463)" font-family="'ArialMT'" font-size="40">Kazreti</text>
 <rect x="3119.3" y="2492.8" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3323.5251 2521.4443)" class="svg_h2">Bolnisi</text>
+<text transform="matrix(1 0 0 1 3323.5251 2521.4443)" font-family="'ArialMT'" font-size="40">Bolnisi</text>
 <rect x="3276.3" y="2434.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3462.717 2462.9929)" class="svg_h2">Marneuli</text>
+<text transform="matrix(1 0 0 1 3462.717 2462.9929)" font-family="'ArialMT'" font-size="40">Marneuli</text>
 <rect x="2704.4" y="2709.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2856.3733 2738.21)" class="svg_h2">Ninotsminda</text>
+<text transform="matrix(1 0 0 1 2856.3733 2738.21)" font-family="'ArialMT'" font-size="40">Ninotsminda</text>
 <rect x="2509" y="2605.3" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2671.0071 2633.9463)" class="svg_h2">Akhalkalaki</text>
+<text transform="matrix(1 0 0 1 2671.0071 2633.9463)" font-family="'ArialMT'" font-size="40">Akhalkalaki</text>
 <rect x="2181.7" y="2304.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2342.5842 2333.0359)" class="svg_h2">Akhaltsikhe</text>
+<text transform="matrix(1 0 0 1 2342.5842 2333.0359)" font-family="'ArialMT'" font-size="40">Akhaltsikhe</text>
 <rect x="3398.5" y="2054.9" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3580.5242 2083.4993)" class="svg_h2">Mtskheta</text>
+<text transform="matrix(1 0 0 1 3580.5242 2083.4993)" font-family="'ArialMT'" font-size="40">Mtskheta</text>
 <rect x="3356.4" y="1945.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3551.749 1974.0569)" class="svg_h2">Dusheti</text>
+<text transform="matrix(1 0 0 1 3551.749 1974.0569)" font-family="'ArialMT'" font-size="40">Dusheti</text>
 <rect x="3276.3" y="1525.7" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3449.3582 1554.3158)" class="svg_h2">Pasanauri</text>
+<text transform="matrix(1 0 0 1 3449.3582 1554.3158)" font-family="'ArialMT'" font-size="40">Pasanauri</text>
 <rect x="3170.7" y="1449.5" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3384.9238 1478.1825)" class="svg_h2">Mleta</text>
+<text transform="matrix(1 0 0 1 3384.9238 1478.1825)" font-family="'ArialMT'" font-size="40">Mleta</text>
 <rect x="2841.1" y="2039.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3066.4001 2068.0806)" class="svg_h2">Gori</text>
+<text transform="matrix(1 0 0 1 3066.4001 2068.0806)" font-family="'ArialMT'" font-size="40">Gori</text>
 <rect x="2389.2" y="2128.8" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2584.5354 2157.3962)" class="svg_h2">Borjomi</text>
+<text transform="matrix(1 0 0 1 2584.5354 2157.3962)" font-family="'ArialMT'" font-size="40">Borjomi</text>
 <rect x="2478" y="2191.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2657.771 2220.0439)" class="svg_h2">Bakuriani</text>
+<text transform="matrix(1 0 0 1 2657.771 2220.0439)" font-family="'ArialMT'" font-size="40">Bakuriani</text>
 <rect x="2519" y="1994.5" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2703.2341 2023.14)" class="svg_h2">Khashuri</text>
+<text transform="matrix(1 0 0 1 2703.2341 2023.14)" font-family="'ArialMT'" font-size="40">Khashuri</text>
 <rect x="1940.1" y="2234.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2097.6431 2263.2886)" class="svg_h2">Abastumani</text>
+<text transform="matrix(1 0 0 1 2097.6431 2263.2886)" font-family="'ArialMT'" font-size="40">Abastumani</text>
 <rect x="2245.9" y="2218.9" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2447.918 2247.5444)" class="svg_h2">Atskuri</text>
+<text transform="matrix(1 0 0 1 2447.918 2247.5444)" font-family="'ArialMT'" font-size="40">Atskuri</text>
 <rect x="2699.2" y="1753" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2873.4224 1781.6344)" class="svg_h2">Tskhinvali</text>
+<text transform="matrix(1 0 0 1 2873.4224 1781.6344)" font-family="'ArialMT'" font-size="40">Tskhinvali</text>
 <rect x="2808.4" y="1665.6" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3023.7759 1694.2104)" class="svg_h2">Kurta</text>
+<text transform="matrix(1 0 0 1 3023.7759 1694.2104)" font-family="'ArialMT'" font-size="40">Kurta</text>
 <rect x="2971.1" y="1735.4" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 3150.8042 1764.0729)" class="svg_h2">Akhalgori</text>
+<text transform="matrix(1 0 0 1 3150.8042 1764.0729)" font-family="'ArialMT'" font-size="40">Akhalgori</text>
 <rect x="4451.1" y="2550.3" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4569.6787 2578.9451)" class="svg_h2">Dedoplis Tskaro</text>
+<text transform="matrix(1 0 0 1 4569.6787 2578.9451)" font-family="'ArialMT'" font-size="40">Dedoplis Tskaro</text>
 <rect x="4065.7" y="2229.8" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 4253.2061 2258.4292)" class="svg_h2">Gurjaani</text>
+<text transform="matrix(1 0 0 1 4253.2061 2258.4292)" font-family="'ArialMT'" font-size="40">Gurjaani</text>
 <rect x="2617.9" y="1422" fill="none" width="526.3" height="55"/>
-<text transform="matrix(1 0 0 1 2827.7048 1450.6819)" class="svg_h2">Kvaisi</text>
+<text transform="matrix(1 0 0 1 2827.7048 1450.6819)" font-family="'ArialMT'" font-size="40">Kvaisi</text>
 <g>
 	<rect x="1859.2" y="1215.2" fill="none" width="1159" height="163.4"/>
-	<text transform="matrix(1 0 0 1 2118.5244 1272.4811)"><tspan x="0" y="0" class="svg_h1">Racha Lechkhumi </tspan><tspan x="51.2" y="96" class="svg_h1">Kvemo Svaneti</tspan></text>
+	<text transform="matrix(1 0 0 1 2118.5244 1272.4811)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="80">Racha Lechkhumi </tspan><tspan x="51.2" y="96" font-family="'ArialMT'" font-size="80">Kvemo Svaneti</tspan></text>
 </g>
 <g>
 	<rect x="1996.5" y="1780.5" fill="none" width="542.5" height="128.4"/>
-	<text transform="matrix(1 0 0 1 2145.4739 1837.7743)" class="svg_h1">Imereti</text>
+	<text transform="matrix(1 0 0 1 2145.4739 1837.7743)" font-family="'ArialMT'" font-size="80">Imereti</text>
 </g>
 <g>
 	<rect x="1985.5" y="2376.9" fill="none" width="1098.3" height="188.4"/>
-	<text transform="matrix(1 0 0 1 2367.8704 2434.2075)"><tspan x="0" y="0" class="svg_h1">Samckhe </tspan><tspan x="-2.2" y="96" class="svg_h1">Javakheti</tspan></text>
+	<text transform="matrix(1 0 0 1 2367.8704 2434.2075)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="80">Samckhe </tspan><tspan x="-2.2" y="96" font-family="'ArialMT'" font-size="80">Javakheti</tspan></text>
 </g>
 <g>
 	<rect x="2683" y="1844.7" fill="none" width="670.5" height="110"/>
-	<text transform="matrix(1 0 0 1 2813.6497 1901.9625)" class="svg_h1">Shida Kartli</text>
+	<text transform="matrix(1 0 0 1 2813.6497 1901.9625)" font-family="'ArialMT'" font-size="80">Shida Kartli</text>
 </g>
 <g>
 	<rect x="2962.3" y="1641" fill="none" width="1366.5" height="220.6"/>
-	<text transform="matrix(1 0 0 1 3483.2849 1698.2404)"><tspan x="0" y="0" class="svg_h1">Mtskheta </tspan><tspan x="22.2" y="96" class="svg_h1">Mtianeti</tspan></text>
+	<text transform="matrix(1 0 0 1 3483.2849 1698.2404)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="80">Mtskheta </tspan><tspan x="22.2" y="96" font-family="'ArialMT'" font-size="80">Mtianeti</tspan></text>
 </g>
 <g>
 	<rect x="4026.8" y="2124.2" fill="none" width="670.5" height="117.1"/>
-	<text transform="matrix(1 0 0 1 4228.6401 2181.5005)" class="svg_h1">Kakheti</text>
+	<text transform="matrix(1 0 0 1 4228.6401 2181.5005)" font-family="'ArialMT'" font-size="80">Kakheti</text>
 </g>
 <g>
 	<rect x="3094.6" y="2331.9" fill="none" width="678.5" height="51.2"/>

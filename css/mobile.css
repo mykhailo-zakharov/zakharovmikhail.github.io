@@ -1,10 +1,10 @@
 :root {
-  font-size: 7.75px;
+  font-size: 6px;
   font-family: "Helvetica"; }
 
 @media only screen and (max-width: 1440px) {
   :root {
-    font-size: 0.538vw; } }
+    font-size: 0.45vw; } }
 
 @media only screen and (max-width: 980px) {
   :root {
