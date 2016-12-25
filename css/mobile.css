@@ -45,8 +45,7 @@
     background: #fff;
     transform: translateX(-110%);
     transition-duration: .5s;
-    width: 100%;
-    max-width: 320px; }
+    width: 100%; }
   .header.open {
     transform: translateX(0); }
   .header_logo-link {
@@ -81,19 +80,25 @@
     display: block; }
   .index-page .header_logo-link {
     display: none; }
-  .index-page .icon_menu {
+  .icon_menu {
     left: auto;
-    right: 3rem; }
-  .index-page .footer .toggle-lang {
+    width: 5rem;
+    top: 3.5rem;
+    right: 4.5rem; }
+  .footer .toggle-lang {
     display: none; }
-  .index-page .header .toggle-lang {
+  .header .toggle-lang {
     display: block;
     position: static;
     margin-bottom: 20vh; }
-  .index-page .headerSocialFB {
+  .headerSocialFB {
     display: none; }
-  .index-page .index .header_logo {
-    display: block; } }
+  .index .header_logo {
+    display: block; }
+  .what-we-do,
+  .what-we-are {
+    padding-right: 3rem;
+    padding-left: 3rem; } }
 
 @media only screen and (max-width: 600px) {
   .contact-form .contac-form-item {
