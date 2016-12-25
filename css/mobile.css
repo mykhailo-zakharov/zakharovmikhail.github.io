@@ -78,7 +78,7 @@
     display: none; }
   .index_logo-link {
     display: block; }
-  .index-page .header_logo-link {
+  .header_logo-link {
     display: none; }
   .icon_menu {
     left: auto;
@@ -95,10 +95,19 @@
     display: none; }
   .index .header_logo {
     display: block; }
+  .main_logo-link {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    top: 3rem;
+    left: 3rem;
+    width: 10rem; }
   .what-we-do,
-  .what-we-are {
-    padding-right: 3rem;
-    padding-left: 3rem; } }
+  .what-we-are,
+  .stories,
+  .stories-single,
+  .contact {
+    padding: 18rem 3rem 10rem; } }
 
 @media only screen and (max-width: 600px) {
   .contact-form .contac-form-item {
