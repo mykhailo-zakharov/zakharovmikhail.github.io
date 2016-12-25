@@ -675,3 +675,10 @@ input.contact-submit {
 .test_font {
   fill: red;
   font-size: 150; }
+
+.main_logo-link {
+  display: none; }
+
+.leaflet-interactive {
+  fill: transparent;
+  stroke: #000; }
