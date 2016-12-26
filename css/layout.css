@@ -682,3 +682,60 @@ input.contact-submit {
 .leaflet-interactive {
   fill: transparent;
   stroke: #000; }
+
+.dot_mini {
+  fill: red; }
+
+.dot_big {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 5;
+  cursor: pointer; }
+  .dot_big:hover {
+    stroke: red; }
+
+#pop-up {
+  opacity: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  position: absolute;
+  background-color: #fff;
+  width: 50rem;
+  font-style: italic;
+  box-shadow: 0 0 3px grey, 3px 3px 3px grey; }
+  #pop-up:hover {
+    opacity: 1 !important; }
+
+.pop-up_img {
+  width: 100%;
+  border-radius: 100%; }
+
+.pop-up_img-wrap {
+  width: 12rem;
+  float: left;
+  margin: 0 1rem 0 0; }
+
+#pop-up .stories-single_text {
+  font-size: 2.26rem; }
+
+#pop-up.top {
+  margin-top: -32rem; }
+
+#pop-up.bottom {
+  margin-top: 4rem; }
+
+.pop-up_limk {
+  display: inline-block;
+  font-size: 2.26rem;
+  font-style: normal;
+  font-weight: 900;
+  color: #92278f;
+  margin: 2rem 0 1rem; }
+  .pop-up_limk > span {
+    text-decoration: underline; }
+  .pop-up_limk > img {
+    width: 2rem;
+    margin: 0 0 0 2rem; }
+
+.hardVisible {
+  opacity: 1 !important; }

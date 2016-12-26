@@ -9,3 +9,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 }).addTo(map);
 
 var geojson = L.geoJson(statesData).addTo(map);
+
+L.marker([42,44]).addTo(map).bindPopup("<img  width='200px' src='img/photo1.jpg'><br><strong>КАРО ФИЛЬМ Шоколад</strong><br />Адрес: ул. Белинского, 124<br> <a href='link.html'>link</a>").openPopup();
+L.marker([43,45]).addTo(map).bindPopup("<img  width='200px' src='img/photo1.jpg'><br><strong>КАРО ФИЛЬМ Шоколад</strong><br />Адрес: ул. Белинского, 124<br> <a href='link.html'>link</a>").openPopup();
+L.marker([42.5,44.3]).addTo(map).bindPopup("<img  width='200px' src='img/photo1.jpg'><br><strong>КАРО ФИЛЬМ Шоколад</strong><br />Адрес: ул. Белинского, 124<br> <a href='link.html'>link</a>").openPopup();

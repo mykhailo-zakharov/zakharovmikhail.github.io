@@ -1,5 +1,62 @@
+var listStory = [
+	["10","15", "ava.png", "Shorena Kravelidze "],
+	["50","50", "photo1.jpg", "Roky"],
+	["80","60", "photo2.jpg", "Test Name "]
+]
 
 function My_map() {
+
+
+
+
+
+		$( svg_map ).append( "<g><circle r='20' cx='1000' cy='900' class='dot_mini' /><circle data-id='0' r='30' cx='1000' cy='900' class='dot_big' /></g>" );
+		$( svg_map ).append( "<g><circle r='20' cx='3000' cy='2000' class='dot_mini' /><circle data-id='1' r='30' cx='3000' cy='2000' class='dot_big' /></g>" );
+		// $( svg_map ).append( "<g></g>" );
+		$("#container-test").html($("#container-test").html());
+
+		var popUp = $( "#pop-up" );
+
+		$( popUp ).hover(function(){
+
+			}, function(){
+				popUp.offset( {top: -500, left: -500} );
+		})
+
+		$(".dot_big").hover(function(){
+				var  item = $( this ),
+				id = item.data("id");
+ 
+				$(".pop-up_img").attr("src", "img/"+listStory[id][2]);
+				$(".pop-name").text( listStory[id][3] );
+
+				popUp.attr("class", "");
+
+				popUp.offset( $(this).position() );
+
+				console.log($(popUp).outerHeight()+" < "+ $(this).position().top);
+
+				if( $(popUp).outerHeight() < $(this).position().top ){
+					popUp.addClass( "top" );
+				} else {
+					popUp.addClass( "bottom" );
+				}
+
+				popUp.addClass("hardVisible");
+
+		}, function(){	
+				popUp.removeClass("hardVisible");
+		});
+
+
+
+
+
+
+
+
+
+
 
 		var self = this,
 		box = document.getElementById('container-test'),
@@ -27,13 +84,16 @@ function My_map() {
 		koefMoveX = viewBox3 / $(box).width(),
 		koefMoveY = viewBox4 / $(box).height(),
 		stepX = viewBox3 *0.05,
-		stepY = viewBox4 *0.05;
+		stepY = viewBox4 *0.05,
+		sizeDotMini = 5,
+		sizeDotBig = 8;
+		sizeDotBigStroke = 2;
 
 		this.init = function(){
+			// this.creatCircle();
 			this.mouseScroling();
 			this.mouseMove();
 			this.setFontSize();
-			// this.scroling();
 		}
 
 	this.setFontSize = function(){
@@ -41,9 +101,14 @@ function My_map() {
 		h1_fontSize = Math.round( parseInt( $(".svg_h1").css("font-size") ) * koef);
 		h2_fontSize = Math.round( parseInt( $(".svg_h2").css("font-size") ) * koef);
 		strokeWidth = Math.round( parseInt( $(".oblast").css("stroke-width") ) * koef);
+		sizeDotMini = Math.round( sizeDotMini * koef);
+		sizeDotBig = Math.round( sizeDotBig * koef);
+		sizeDotBigStroke = Math.round( sizeDotBigStroke * koef);
 		$(".svg_h1").css( "font-size", h1_fontSize );
 		$(".svg_h2").css( "font-size", h2_fontSize );
 		$(".oblast").css("stroke-width", strokeWidth);
+		$(".dot_mini"). attr("r", sizeDotMini);
+		$(".dot_big"). attr("r", sizeDotBig).attr("stroke-width", sizeDotBigStroke);
 	}
 	this.mouseScroling = function(){
 
@@ -177,6 +242,8 @@ function My_map() {
 		    $(".svg_h1").css("font-size", h1_fontSize * koeScale );
 		    $(".svg_h2").css("font-size", h2_fontSize * koeScale );
 		    $(".oblast").css("stroke-width", strokeWidth * koeScale );
+    		$(".dot_mini"). attr("r", sizeDotMini * koeScale );
+			$(".dot_big"). attr("r", sizeDotBig * koeScale ).css("stroke-width", sizeDotBigStroke * koeScale );
 
 		} else {
 			tempDelta = 0;
@@ -209,7 +276,14 @@ function My_map() {
 				viewBox2_new = 0;
 			}
 
-				console.log("check: X( "+viewBox1_new+", "+centerX+" ) Y( "+viewBox2_new+", "+ centerY+" )");
+				// console.log("check: X( "+viewBox1_new+", "+centerX+" ) Y( "+viewBox2_new+", "+ centerY+" )");
+
+	}
+
+	this.creatCircle = function(){
+
+		$( svg_map ).append( "<g><circle r='20' cx='1000' cy='500' fill='orangered' stroke='crimson' stroke-width='5' /></g>" );
+		$("#container-test").html($("#container-test").html());
 
 	}
 
