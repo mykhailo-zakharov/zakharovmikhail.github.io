@@ -65,7 +65,7 @@ function SvgMap() {
 		var self = this,
 		box = document.getElementById('container-map'),
 		svg = document.getElementById('svg_map'),
-		BtnScale = document.getElementById('btn-scale'),
+		// BtnScale = document.getElementById('btn-scale'),
 		btnScale = 1,
 		tempDelta = 0,
 		viewBox1 = 0,
@@ -217,9 +217,9 @@ function SvgMap() {
 
 	this.scroling = function(delta){
 
-		if(btnScale >= 1) {
+		if(btnScale >= 1 && btnScale < 2) {
 
-		  	BtnScale.innerHTML = btnScale;
+		  	// BtnScale.innerHTML = btnScale;
 
 		  	var koeScale = 1 - (btnScale - 1);
 
@@ -248,7 +248,7 @@ function SvgMap() {
     		$(".dot_mini"). attr("r", sizeDotMini * koeScale );
 			$(".dot_big"). attr("r", sizeDotBig * koeScale ).css("stroke-width", sizeDotBigStroke * koeScale );
 
-		} else {
+		} else if( btnScale == 1) {
 			tempDelta = 0;
 			moveX = 0;
 			moveY = 0;
@@ -312,8 +312,8 @@ function SvgMap() {
 
 
 
-
-setTimeout(function(){
+if( $("#container-map").length ){
+	
 	my_map = new SvgMap();
-},1000)
 
+}

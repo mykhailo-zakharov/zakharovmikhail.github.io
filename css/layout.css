@@ -618,10 +618,24 @@ input.contact-submit {
   width: 100%;
   margin: 1.8rem 0 1rem; }
 
+.stories-map .srories-header {
+  position: absolute;
+  top: 11rem; }
+
+.stories-map .stories-controls {
+  padding-left: 5rem; }
+
+.stories-map .stories-count {
+  padding-right: 5rem; }
+
+.stories-map .switch-map {
+  padding-right: 6rem; }
+
 #container-map {
   height: 100vh; }
 
-.page-test {
+.page-test,
+.stories-map {
   position: fixed;
   box-sizing: border-box;
   top: 0;
@@ -659,20 +673,19 @@ input.contact-submit {
 
 .btn-group {
   position: fixed;
-  top: 3rem;
-  right: 10rem;
-  padding: 1rem; }
+  top: 30rem;
+  right: 10rem; }
 
 #btn-plus,
 #btn-minus,
 #btn-scale {
-  display: inline-block;
+  display: block;
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
-  min-width: 4rem;
-  border: 1px solid #000;
-  margin: 0 1rem; }
+  width: 6rem;
+  margin: 1rem;
+  cursor: pointer; }
 
 #map {
   width: 100%;
