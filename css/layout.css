@@ -149,7 +149,6 @@ body {
   width: 4.6rem;
   top: 3.9rem;
   left: 2.7rem;
-  background: rgba(255, 255, 255, 0.5);
   border-radius: 100%; }
 
 main {
@@ -631,8 +630,16 @@ input.contact-submit {
 .stories-map .switch-map {
   padding-right: 6rem; }
 
+.stories-map .stories-single_text {
+  font-style: italic; }
+
+.index-page .icon_menu {
+  fill: #fff; }
+
 #container-map {
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 10rem;
+  box-sizing: border-box; }
 
 .page-test,
 .stories-map {
@@ -646,7 +653,8 @@ input.contact-submit {
 
 #demo-tiger,
 #svg_map {
-  width: 100%; }
+  width: 100%;
+  max-height: 100%; }
 
 .oblast {
   fill: #fff;
@@ -656,8 +664,6 @@ input.contact-submit {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill-rule: evenodd; }
-  .oblast:hover {
-    fill: rgba(0, 0, 0, 0.1); }
 
 .svg_h1,
 .svg_h2 {
@@ -686,6 +692,10 @@ input.contact-submit {
   width: 6rem;
   margin: 1rem;
   cursor: pointer; }
+  #btn-plus:active,
+  #btn-minus:active,
+  #btn-scale:active {
+    opacity: 0; }
 
 #map {
   width: 100%;
@@ -704,15 +714,14 @@ input.contact-submit {
   stroke: #000; }
 
 .dot_mini {
-  fill: red; }
+  fill: #92278f; }
 
 .dot_big {
   fill: transparent;
   stroke: transparent;
-  stroke-width: 5;
-  cursor: pointer; }
+  stroke-width: 5; }
   .dot_big:hover {
-    stroke: red; }
+    stroke: #92278f; }
 
 #pop-up {
   opacity: 0;
@@ -722,20 +731,10 @@ input.contact-submit {
   background-color: #fff;
   width: 50rem;
   box-sizing: border-box;
-  font-style: italic;
   box-shadow: 0 0 3px grey, 3px 3px 3px grey;
   z-index: 99999; }
   #pop-up:hover {
     opacity: 1 !important; }
-  #pop-up:before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 120%;
-    width: 120%;
-    top: -10%;
-    left: -10%;
-    z-index: -1; }
 
 .pop-up_img {
   width: 100%;
@@ -747,7 +746,8 @@ input.contact-submit {
   margin: 0 1rem 0 0; }
 
 #pop-up .stories-single_text {
-  font-size: 2.26rem; }
+  font-size: 2.26rem;
+  font-style: italic; }
 
 #pop-up.top {
   margin-top: -32rem; }

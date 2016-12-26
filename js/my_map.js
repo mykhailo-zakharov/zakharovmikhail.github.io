@@ -286,6 +286,7 @@ function SvgMap() {
 
 
 		$("#btn-plus").click(function(){
+			$( this ).fadeOut(0).fadeIn(0);
 
 			tempDelta -= 100;
 
@@ -297,6 +298,7 @@ function SvgMap() {
 
 
 		$("#btn-minus").click(function(){
+			$( this ).fadeOut(0).fadeIn(0);
 
 			tempDelta += 100;
 
@@ -313,7 +315,7 @@ function SvgMap() {
 
 
 if( $("#container-map").length ){
-	
+
 	my_map = new SvgMap();
 
 }
