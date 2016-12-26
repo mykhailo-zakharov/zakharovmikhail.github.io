@@ -62,7 +62,7 @@ body {
 .header_menu_link {
   display: block;
   padding: 0.9rem 0 1.3rem;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   transition-duration: .5s; }
   .header_menu_link.active, .header_menu_link:hover {
     font-weight: 900; }
@@ -92,7 +92,7 @@ body {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  width: 10rem; }
+  width: 12rem; }
 
 .header .toggle-lang {
   display: none; }
@@ -574,9 +574,16 @@ input.contact-submit {
   opacity: 0.6; }
 
 .ui-button .ui-icon {
-  background-image: url(../img/arrov_mini.png);
-  background-repeat: no-repeat;
-  background-position: 50% 40%;
+  background: url(../img/arrov_mini.png) no-repeat 50% 40%;
+  background-size: 1rem; }
+  .ui-button .ui-icon:hover {
+    background: url(../img/arrov_mini.png) no-repeat 50% 40%;
+    background-size: 1rem; }
+
+.stories .ui-state-hover .ui-icon,
+.ui-selectmenu-text:hover .ui-icon,
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
+  background: url(../img/arrov_mini.png) no-repeat 50% 40%;
   background-size: 1rem; }
 
 .stories-single {
@@ -611,7 +618,7 @@ input.contact-submit {
   width: 100%;
   margin: 1.8rem 0 1rem; }
 
-#container-test {
+#container-map {
   height: 100vh; }
 
 .page-test {
@@ -697,14 +704,25 @@ input.contact-submit {
 #pop-up {
   opacity: 0;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   position: absolute;
   background-color: #fff;
   width: 50rem;
+  box-sizing: border-box;
   font-style: italic;
-  box-shadow: 0 0 3px grey, 3px 3px 3px grey; }
+  box-shadow: 0 0 3px grey, 3px 3px 3px grey;
+  z-index: 99999; }
   #pop-up:hover {
     opacity: 1 !important; }
+  #pop-up:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    top: -10%;
+    left: -10%;
+    z-index: -1; }
 
 .pop-up_img {
   width: 100%;
@@ -738,4 +756,9 @@ input.contact-submit {
     margin: 0 0 0 2rem; }
 
 .hardVisible {
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  transition: opacity .3s ease-in-out; }
+
+.pop-up_age {
+  margin-bottom: 1rem;
+  display: inline-block; }

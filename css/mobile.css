@@ -68,8 +68,10 @@
     display: block; }
   .stories-count {
     display: table-caption;
-    text-align: left;
+    text-align: right;
     margin-bottom: 4rem; }
+  .stories-count_title {
+    padding: 0 0.7rem; }
   .stories-controls {
     display: table-row; }
   .stories {
@@ -96,6 +98,7 @@
   .index .header_logo {
     display: block; }
   .main_logo-link {
+    display: block;
     position: absolute;
     top: 2rem;
     left: 3rem;

@@ -65,7 +65,7 @@ $(document).ready(function() {
 	       afterMove : moved,
 	       startDragging : pauseOnDragging,
 	       // transitionStyle : "fade"
-	       transitionStyle : "fadeUp"
+	       // transitionStyle : "fadeUp"
 	       // transitionStyle : "backSlide"
 	       // transitionStyle : "goDown"
 	     });
