@@ -89,8 +89,8 @@ function SvgMap() {
 		koefMoveY = viewBox4 / $(box).height(),
 		stepX = viewBox3 * 0.05,
 		stepY = viewBox4 * 0.05,
-		sizeDotMini = 5,
-		sizeDotBig = 8;
+		sizeDotMini = 4,
+		sizeDotBig = 7;
 		sizeDotBigStroke = 2;
 
 		this.init = function(){

@@ -735,6 +735,8 @@ input.contact-submit {
   z-index: 99999; }
   #pop-up:hover {
     opacity: 1 !important; }
+  #pop-up .stories-single_title {
+    font-size: 2rem; }
 
 .pop-up_img {
   width: 100%;
@@ -746,7 +748,7 @@ input.contact-submit {
   margin: 0 1rem 0 0; }
 
 #pop-up .stories-single_text {
-  font-size: 2.26rem;
+  font-size: 2rem;
   font-style: italic; }
 
 #pop-up.top {
