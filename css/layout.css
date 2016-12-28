@@ -40,7 +40,7 @@ body {
 .header_menu {
   position: relative;
   margin-top: 2rem;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0 1rem; }
   .header_menu:before, .header_menu:after {
     content: "";
     display: block;
@@ -692,11 +692,16 @@ input.contact-submit {
   text-align: center;
   width: 6rem;
   margin: 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fff; }
   #btn-plus:active,
   #btn-minus:active,
   #btn-scale:active {
     opacity: 0; }
+
+#map {
+  width: 100%;
+  background: none; }
 
 .test_font {
   fill: red;

@@ -18,7 +18,7 @@ function SvgMap() {
 	}
 
 		// $( svg_map ).append( "<g><circle r='20' cx='1000' cy='900' class='dot_mini' /><circle data-id='0' r='30' cx='1000' cy='900' class='dot_big' /></g>" );
-		$("#container-map").html($("#container-map").html());
+		$("#container-map").html( $("#container-map").html() );
 
 		var popUp = $( "#pop-up" );
 
@@ -141,6 +141,8 @@ function SvgMap() {
 
 		  btnScale = 1 - tempDelta / 1000;
 
+		  console.log(tempDelta);
+
 		  self.scroling(delta);
 
 		  // e.preventDefault ? e.preventDefault() : (e.returnValue = false);
@@ -248,11 +250,15 @@ function SvgMap() {
     		$(".dot_mini"). attr("r", sizeDotMini * koeScale );
 			$(".dot_big"). attr("r", sizeDotBig * koeScale ).css("stroke-width", sizeDotBigStroke * koeScale );
 
-		} else if( btnScale == 1) {
+		} else if( btnScale <= 1) {
 			tempDelta = 0;
 			moveX = 0;
 			moveY = 0;
 			svg.setAttribute("viewBox", "0 0 " + viewBox3 + " " + viewBox4 );
+
+		} else {
+
+			tempDelta = -1000;
 		}
 
 	}

@@ -40,7 +40,7 @@ body {
 .header_menu {
   position: relative;
   margin-top: 2rem;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0 1rem; }
   .header_menu:before, .header_menu:after {
     content: "";
     display: block;
@@ -63,7 +63,8 @@ body {
   display: block;
   padding: 0.9rem 0 1.3rem;
   font-size: 2.8rem;
-  transition-duration: .5s; }
+  transition-duration: .5s;
+  white-space: nowrap; }
   .header_menu_link.active, .header_menu_link:hover {
     font-weight: 900; }
 
@@ -691,12 +692,16 @@ input.contact-submit {
   text-align: center;
   width: 6rem;
   margin: 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fff; }
   #btn-plus:active,
   #btn-minus:active,
   #btn-scale:active {
     opacity: 0; }
 
+#map {
+  width: 100%;
+  background: none; }
 
 .test_font {
   fill: red;
