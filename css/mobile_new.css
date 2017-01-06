@@ -72,6 +72,9 @@
     width: auto;
     padding: 0 3rem;
   }
+  .side-menu-inner.fixed {
+    display: static !important;
+  }
 
 }
 

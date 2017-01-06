@@ -214,8 +214,8 @@ a:hover {
     color: #fff;
     padding: 2rem;
     font-size: 2.3rem;
-    border: 1px solid green;
-    background-color: green;
+    border: 1px solid #0fbdaf;
+    background-color: #0fbdaf;
     border-radius: .5rem;
     cursor: pointer;
     transition-duration: .3s;
@@ -223,7 +223,7 @@ a:hover {
 }
 .footer-btn:hover {
 	background-color: transparent;
-	color: green;
+	color: #0fbdaf;
 }
 .footer-btn-up {
 	position: absolute;
@@ -346,6 +346,7 @@ font-size: 2.5rem;
 	font-size: 2.5rem;
 	line-height: 1.5;
 	margin-top: 5rem;
+	font-weight: bold;
 }
 .side-menu-inner.fixed {
 	position: fixed;
