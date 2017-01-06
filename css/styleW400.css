@@ -1,0 +1,16 @@
+#header-wrapper .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+#content .lunch-wrapper .content-title-box h2.big-title {
+    padding: 0;
+}
+
+#content ul li.process-box .text {
+    line-height: 2.2rem;
+}
+
+#content ul.process-list {
+    margin: 10px 0 0 0;
+}

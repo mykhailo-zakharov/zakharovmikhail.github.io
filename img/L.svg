@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="01_Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-275.000000, -50.000000)" fill="#323436">
+            <path d="M275,54.0071897 C275,51.7940799 276.794268,50 279.00719,50 L320.99281,50 C323.20592,50 325,51.7942683 325,54.0071897 L325,95.9928103 C325,98.2059201 323.205732,100 320.99281,100 L279.00719,100 C276.79408,100 275,98.2057317 275,95.9928103 L275,54.0071897 Z M294.9175,63.716 L298.705331,63.716 L298.705331,81.6330395 L307.754037,81.6330395 L307.754037,85 L294.9175,85 L294.9175,63.716 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
