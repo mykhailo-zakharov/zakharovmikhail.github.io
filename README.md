@@ -1,2 +1,0 @@
-# launchcircle
-launchcircle homepage
