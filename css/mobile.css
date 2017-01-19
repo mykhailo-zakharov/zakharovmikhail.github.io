@@ -15,6 +15,10 @@
   :root {
     font-size: 7.1px; } }
 
+@media only screen and (min-width: 767px) {
+  .nav .container {
+    display: block !important; } }
+
 @media only screen and (max-width: 767px) {
   .burger-menu {
     display: block;
@@ -148,7 +152,9 @@
     background-image: url(images/ui-icons_555555_256x240.png); }
   .tabs-wrap + .container {
     max-width: none;
-    padding: 0; } }
+    padding: 0; }
+  .work-slider-box {
+    margin: 5rem 2rem; } }
 
 @media only screen and (max-width: 500px) {
   .logo > img {

@@ -1,0 +1,27 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/binboro/newsletter.binboro.com.git"
+  },
+  "author": "Binboro",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/binboro/newsletter.binboro.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-install": "^0.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-minify": "0.0.14",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {},
+  "description": ""
+}

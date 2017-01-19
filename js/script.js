@@ -8,9 +8,6 @@ function Task(){
 	this.init = function(){
 		this.menuMob();
 		this.slider();
-		$( window ).resize(function(){
-			// self.slider(true);
-		});
 	}
 
    	this.menuMob = function(){
@@ -24,7 +21,6 @@ function Task(){
 		console.log("start slider");		
 
    		var window_width = $( window ).width(),
-		// item_width = 320;
 		item_width = $( ".slider-item" ).outerWidth(true);
 		col = Math.ceil( ( window_width + item_width * 0.5 ) / item_width);
 		console.log(`( ${window_width} + ${item_width} * 0.5 ) / ${item_width}`);
