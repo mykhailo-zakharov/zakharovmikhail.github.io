@@ -54,7 +54,7 @@
 
 .menu > li:not(:last-child):after {
   content: "•";
-  margin: 0 2.08rem;
+  margin: 0 2rem;
   font-size: 2rem;
   color: #fff; }
 
