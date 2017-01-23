@@ -150,6 +150,7 @@ $main_color: #ff8400;
 }
 .form {
 	transform: skewX(15deg);
+    will-change: opacity;
 }
 .form-title {
 	font-size: 3.49rem;

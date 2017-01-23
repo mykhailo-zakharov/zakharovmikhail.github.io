@@ -145,7 +145,8 @@
   transform: skewX(-15deg); }
 
 .form {
-  transform: skewX(15deg); }
+  transform: skewX(15deg);
+  will-change: opacity; }
 
 .form-title {
   font-size: 3.49rem;
