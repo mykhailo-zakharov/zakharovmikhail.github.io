@@ -1,140 +1,168 @@
+'use string';
+
 function Task(){
 	var self = this;
-	var col,
-	images = ["slider_1.jpg","slider_2.jpg","slider_3.jpg","slider_4.jpg","slider_5.jpg",
-   		"slider_6.jpg","slider_7.jpg","slider_8.jpg","slider_9.jpg","slider_10.jpg",],
-	listImg = [];
-
 	this.init = function(){
-		this.menuMob();
-		this.slider();
-	}
-
-   	this.menuMob = function(){
-   		$(".burger-menu").click(function () {
-	   			$(this).toggleClass("menu-on");
-	   			$(".nav>.container").slideToggle();
-		});
-   	}
-
-   	this.slider = function(resize){
-		console.log("start slider");		
-
-   		var window_width = $( window ).width(),
-		item_width = $( ".slider-item" ).outerWidth(true);
-		col = Math.ceil( ( window_width + item_width * 0.5 ) / item_width);
-		console.log(`( ${window_width} + ${item_width} * 0.5 ) / ${item_width}`);
-		var wrap_width = item_width * col + 3,
-   		html = "",
-   		line = [];
-   			console.log(`col: ${col}`);
-   		for (var i = 0; i < col; i++) {
-   			html += "<div class='slider-item'><div class='slider-inner'><div class='slider-img'></div></div></div>";
-   		}
-
-   		$(".slider")
-   			.css({
-   				"width": wrap_width,
-   				"left": -( wrap_width - window_width ) / 2
-   			})
-   			.html( html );
-
-		$( ".slider-img" ).each(function(i){
-			$( this ).css("background", "url(../img/" + images[i] + ")");
-			listImg.push( i );
-		});
-
-		if(!resize){
-			setTimeout(function(){
-				self.changeImg();
-			},2000);
-			console.log("main start");
+        this.select();
+        this.adding();
+        this.clear();
+	};
+	this.param = [
+		{
+			top: 0,
+            right: 67.5,
+			bottom: 50.65,
+			left:0
+		},
+		{
+			top: 0,
+            right: 33.5,
+			bottom: 50.65,
+			left: 33.5
+		},
+		{
+			top: 0,
+            right: 0,
+			bottom: 50.65,
+			left: 67.5
+		},
+		{
+			top: 50.65,
+            right: 67.5,
+			bottom: 0,
+			left:0
+		},
+		{
+			top: 50.65,
+            right: 33.5,
+			bottom: 0,
+			left: 33.5
+		},
+		{
+			top: 50.65,
+            right: 0,
+			bottom: 0,
+			left: 67.5
 		}
-   	}
+	];
+   	this.select = function(){
+   		$(".box").click(function () {
+            $(this).toggleClass("active");
+        });
+   	};
+   	this.adding = function () {
+   		$(".btn1").click(function () {
+   			var result = null,
+				top, right,	bottom,	left, numb1, numb2, numb3;
 
-	this.random = function(numb) {
-		var rand = Math.random() * numb;
-		rand = Math.round(rand);
-		return rand;
-	}
+            switch( $(".active").length ){
+				case 1:
+                    // $(".active").clone().appendTo(".container2");
+                    numb1 = $($(".active")[0]).data("numb") - 1;
+                    top = self.param[numb1].top + "%";
+					bottom = self.param[numb1].bottom + "%";
+                    right = self.param[numb1].right + "%";
+                    left = self.param[numb1].left + "%";
+                    result = {
+                        top: top,
+                        bottom: bottom,
+                        right: right,
+                        left: left
+                    };
+                    console.log(`result: { t: ${result.top}, r: ${result.right}, b: ${result.bottom}, l: ${result.left} }`);
 
-	this.changeImg = function(){
-		console.log("start changeImg");
-		var is = false,
-		eq = self.random(col),
-		item = $( ".slider-img" ).eq( eq ),
-		img;
-		while( is == false){
-			img = self.random(images.length - 1);
-			var result = listImg.indexOf(img);
-			if( result == -1 ){
-				is = true;
+                    $("<div class='box'>").appendTo(".container2").css(result);
+                    $(".active").removeClass("active");
+                    break;
+				case 2:
+					numb1 = $($(".active")[0]).data("numb") - 1;
+					numb2 = $($(".active")[1]).data("numb") - 1;
+					console.log(numb1, numb2);
+					arr = [[0,1],[0,3],[1,2],[1,0],[1,4],[2,1],[2,5],[3,0],[3,4],[4,1],[4,3],[4,5],[5,4],[5,2]];
+                    for (var i=0; i<arr.length; i++){
+                    	if(numb1 == arr[i][0] && numb2 == arr[i][1]){
+                    		if(self.param[numb1].top == self.param[numb2].top){
+                                top = self.param[numb1].top + "%";
+								right = Math.min(self.param[numb1].right, self.param[numb2].right) + "%";
+								bottom = self.param[numb1].bottom + "%";
+								left = Math.min(self.param[numb1].left, self.param[numb2].left) + "%";
+								result = {
+									top: top,
+									bottom: bottom,
+									right: right,
+									left: left
+								}
+							} else {
+                                right = self.param[numb1].right + "%";
+                                left = self.param[numb1].left + "%";
+                                result = {
+                                    top: 0,
+                                    bottom: 0,
+                                    right: right,
+                                    left: left
+                                }
+							}
+                            $(".active").removeClass("active");
+                            console.log(`result: { t: ${result.top}, r: ${result.right}, b: ${result.bottom}, l: ${result.left} }`);
+                            break;
+						}
+					}
+                    if(result){
+
+                        $("<div class='box'>").appendTo(".container2").css(result);
+					} else {
+                    	alert("не правильный выбор");
+					}
+
+                    break;
+				case 3:
+                    numb1 = $($(".active")[0]).data("numb") - 1;
+                    numb2 = $($(".active")[1]).data("numb") - 1;
+                    numb3 = $($(".active")[2]).data("numb") - 1;
+                    console.log(numb1, numb2, numb3);
+                    if(self.param[numb1].top == self.param[numb2].top && self.param[numb2].top == self.param[numb3].top){
+                        bottom = self.param[numb1].bottom + "%";
+                        top = self.param[numb1].top + "%";
+                        result = {
+                            top: top,
+                            bottom: bottom,
+                            right: 0,
+                            left: 0
+                        }
+                        $("<div class='box'>").appendTo(".container2").css(result);
+                        $(".active").removeClass("active");
+					} else {
+                        alert( 'не правельный выбор' );
+					}
+                    break;
+
+				// case 4:
+                //
+                 //    break;
+				// case 6:
+                //
+                 //    break;
+                default:
+                    alert( 'не правельный выбор' );
 			}
-		}
-		listImg[eq] = img;
-		item.addClass("slider-rotate");
 
-		var timer_1 = setTimeout(function(){
-			item.css("background", "url(../img/" + images[ img ] + ")")
-				.removeClass("slider-rotate");	
-		},400);
 
-		var timer_2 = setTimeout(function(){
-			self.changeImg();
-		},3000);
 
-	}
+
+
+        });
+    };
+
+   	this.clear = function () {
+		$(".btn2").click(function () {
+			$(".container2").html("");
+        });
+    }
 
 
     this.init();
 }
+
 $(window).ready(function(){
 	var task = new Task();
-
-
-
-	$( ".work-slider-box" ).slick({
-		vertical: true,
-		verticalSwiping: true,
-		autoplay: true,
-	});
-
-	$( ".fancybox" ).fancybox();
-
-
-	$( "#tabs" ).tabs({
-		active: 0,
-		activate: function( event, ui ) {
-			var item = ui.newPanel[0].id;
-			console.log( item[5] );
-			$( ".tabs-list" ).hide();
-			$( "."+item ).css("display", "table");
-
-			switch( +item[5] ) {
-			  case 1:
-			    $( ".tabs-arow" ).css("margin-left", "10%");
-			    break;
-
-			  case 2:
-			    $( ".tabs-arow" ).css("margin-left", "36%");
-			    break;
-
-			  case 3:
-			    $( ".tabs-arow" ).css("margin-left", "65%");
-			    break;
-
-			  case 4:
-			    $( ".tabs-arow" ).css("margin-left", "88%");
-			    break;
-			}
-
-		}});
-
-		$( "#accordion" ).accordion({
-			collapsible: true,
-			active: false,
-			heightStyle: "content",
-			icons: { "header": "ui-icon-caret-1-s", "activeHeader": "ui-icon-caret-1-n" }
-		});
-
 });
