@@ -1,56 +1,76 @@
-.container {
+:root {
+  font-size: 10px;
+}
+@media only screen and (max-width: 1280px) {
+  :root {
+    font-size: 0.8vw; } }
+
+@media only screen and (max-width: 1080px) {
+  :root {
+    font-size: 7.9px; } }
+
+@media only screen and (max-width: 850px) {
+  :root {
+    font-size: 7.1px; } }
+
+
+
+.banner-container {
   width: 100rem;
   height: 40rem;
   background-color: #ddd;
   margin: auto;
   position: relative;
+  &>.banner-checked {
+    display: none;
+  }
 }
-.box {
+.banner-box {
   position: absolute;
   width: 30%;
   height: 45%;
   box-sizing: border-box;
   border: 1px solid grey;
-  &.active {
+  &.banner-active {
     background-color: grey;
   }
 }
-.container2>.box {
+.banner-container2>.banner-box {
   width: auto;
   height: auto;
   background-color: grey;
 }
 
-.box1 {
+.banner-box1 {
   top:0;
   left:0;
 }
-.box2 {
+.banner-box2 {
   top: 0;
   left: 35%;
 }
-.box3 {
+.banner-box3 {
   top: 0;
   left: 70%;
 }
-.box4 {
+.banner-box4 {
   bottom: 0;
   left:0;
 }
-.box5 {
+.banner-box5 {
   bottom: 0;
   left: 35%;
 }
-.box6 {
+.banner-box6 {
   bottom: 0;
   left: 70%;
 }
 
-.btn-group {
+.banner-btn-group {
   margin: 5rem 0;
   text-align: center;
 }
-.btn {
+.banner-btn {
   padding: 1rem 2rem;
   margin: 0 2rem;
   font-size: 1.6rem;
@@ -63,5 +83,6 @@
     color: dodgerblue;
     background-color: #fff;
     border: 1px solid dodgerblue;
+
   }
 }

@@ -23,7 +23,7 @@ gulp.task('jade', function() {
 
 
 gulp.task('sass', function () {
-        return gulp.src('gulp/css/main.scss')
+        return gulp.src('gulp/css/layout.scss')
         .pipe(sass())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
