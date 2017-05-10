@@ -1,5 +1,6 @@
 'use string';
 
+
 function Task(){
 	var self = this;
 	this.init = function(){
