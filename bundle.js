@@ -43220,7 +43220,7 @@ var CounterDownDate = function (_Component) {
         _this.initCount = _this.initCount.bind(_this);
         _this.interval = _this.interval.bind(_this);
 
-        setTimeout(_this.initCount, 1000);
+        setTimeout(_this.initCount, 600);
         return _this;
     }
 
