@@ -43304,7 +43304,7 @@ var Seconds = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Seconds.__proto__ || Object.getPrototypeOf(Seconds)).call(this, props));
 
-        _this.state = _this.calculate();
+        _this.state = _this.calculate(_this.props.value);
 
         _this.calculate = _this.calculate.bind(_this);
         _this.setValue = _this.setValue.bind(_this);
@@ -43312,41 +43312,31 @@ var Seconds = function (_Component) {
         return _this;
     }
 
-    // componentDidMount(){
-    //     setTimeout(this.calculate, 100);
-    // }
-
     _createClass(Seconds, [{
         key: "shouldComponentUpdate",
-        value: function shouldComponentUpdate(next) {
-            var _this2 = this;
-
-            if (next.value == 60) {
-                console.log("6060060606006");
-                this.wait = false;
-                setTimeout(function () {
-                    return _this2.wait = true;
-                }, 1000);
+        value: function shouldComponentUpdate(nextProps, nextState) {
+            if (nextProps.value != this.props.value) {
+                this.setValue(nextProps.value);
                 return false;
             }
-            if (next.value != this.props.value && this.wait) {
-                this.setValue();
-                // console.log("update seconds");
+            if (nextState.data[0].value != this.state.data[0].value) {
+                console.log("update seconds: " + this.props.title);
                 return true;
             }
             return false;
         }
     }, {
         key: "setValue",
-        value: function setValue() {
-            var data = this.calculate();
+        value: function setValue(value) {
+            var data = this.calculate(value);
             this.setState(data);
+            console.log("setValue seconds: " + this.props.title);
+            console.log(data);
         }
     }, {
         key: "calculate",
-        value: function calculate() {
-            var value = this.props.value,
-                value1 = value,
+        value: function calculate(value) {
+            var value1 = value,
                 value2 = this.props.maxValue ? this.props.maxValue - value : 0,
                 data = [{ value: value1 }, { value: value2 }];
             return { data: data };
@@ -43376,9 +43366,9 @@ var Seconds = function (_Component) {
                         null,
                         _react2.default.createElement(
                             _Recharts.Pie,
-                            { data: this.state.data, innerRadius: 60, outerRadius: 80, fill: "#82ca9d", startAngle: 90, endAngle: -270, dataKey: "value", animationBegin: 0, animationDuration: 500 },
-                            _react2.default.createElement(_Recharts.Cell, { fill: "#000" }),
-                            _react2.default.createElement(_Recharts.Cell, { fill: "#82ca9d" })
+                            { data: this.state.data, innerRadius: 70, outerRadius: 80, fill: "#82ca9d", startAngle: 90, endAngle: -270, dataKey: "value", animationBegin: 0, animationDuration: 500 },
+                            _react2.default.createElement(_Recharts.Cell, { fill: "#ed939c" }),
+                            _react2.default.createElement(_Recharts.Cell, { fill: "#f3edee" })
                         )
                     )
                 )

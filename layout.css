@@ -2,6 +2,7 @@
 .counter-down-date-wrap {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .counter-down-date-item {
     width: 300px;
@@ -12,7 +13,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: ;
+    top: 0;
     bottom: 0;
     display: flex;
     justify-items: center;
