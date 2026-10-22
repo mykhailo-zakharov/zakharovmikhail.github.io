@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>London Family School Map</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+<style>html,body,#map{width:100%;height:100%;margin:0;padding:0}.leaflet-container{font-size:1rem}</style>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+</head>
+<body><div id="map"></div><script>
+const map=L.map('map').setView([51.48,-0.20],10);
+L.control.scale().addTo(map);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const primary=L.layerGroup(), secondary=L.layerGroup(), selective=L.layerGroup(), areas=L.layerGroup();
+const schools=[
+['P','Southfield Primary','Ealing',51.489,-0.276,'100% KS2 R/W/M; Outstanding; 2026 last-distance ≈410m'],
+['P','Deer Park School','Twickenham',51.4585,-0.3255,'97% KS2 R/W/M; Outstanding; 2025 ≈789m, 2026 ≈523m'],
+['P','Barnes Primary','Barnes',51.474,-0.2405,'96% KS2 R/W/M; Outstanding'],
+['P','Sheringdale Primary','Southfields',51.4475,-0.2085,'95% KS2 R/W/M; Outstanding'],
+['P','Merton Park Primary','Merton Park',51.4075,-0.201,'93% KS2 R/W/M; Outstanding'],
+['P','Park Academy','Merton',51.4115,-0.210,'94% KS2 R/W/M; strong results'],
+['P','Courtland School','Mill Hill',51.612,-0.242,'97% KS2 R/W/M; Outstanding; Barnet official catchment map'],
+['P','West London Free School Primary','Hammersmith',51.4915,-0.231,'92% KS2 R/W/M; Outstanding judgements'],
+['P','Good Shepherd RC Primary','Shepherd’s Bush',51.504,-0.2335,'100% KS2 R/W/M; Outstanding; faith admissions'],
+['P','Harris Primary Academy Beckenham Green','Beckenham',51.4105,-0.0265,'97% KS2 R/W/M; Outstanding'],
+['P','Yardley Primary','Chingford',51.619,0.008,'97% KS2 R/W/M; Outstanding'],
+['S','Queen Elizabeth’s School, Barnet','Barnet',51.644,-0.204,'Selective boys’ grammar; 2026: 87% grades 8–9'],
+['S','Henrietta Barnett School','Hampstead Garden Suburb',51.572,-0.1905,'Selective girls’ grammar; 2026: 87% grades 8–9'],
+['S','Tiffin School','Kingston',51.4125,-0.297,'Selective boys; 2026: 72% grades 8–9'],
+['S','Tiffin Girls’ School','Kingston',51.4045,-0.293,'Selective girls; 2026: 87% grades 8–9'],
+['S','Wilson’s School','Sutton',51.3535,-0.1965,'Selective boys; very high GCSE results'],
+['S','Graveney School','Tooting',51.4335,-0.166,'Mixed; selective + non-selective; 2026 non-selective ≈525m'],
+['S','Ashcroft Technology Academy','Wandsworth',51.4525,-0.2105,'Mixed non-selective; strong Wandsworth option'],
+['S','Grey Court School','Richmond/Ham',51.4475,-0.318,'Mixed comprehensive; Outstanding'],
+['S','Waldegrave School','Twickenham',51.4455,-0.348,'Girls; Outstanding'],
+['S','Orleans Park School','Twickenham',51.451,-0.332,'Mixed comprehensive; Outstanding'],
+['S','Rutlish School','Merton',51.411,-0.207,'Boys; strong Merton option'],
+['S','West London Free School','Hammersmith',51.491,-0.2315,'Mixed; strong comprehensive option']
+];
+function addSchool(s){let [t,n,a,lat,lon,note]=s;let sel=/Selective|grammar/i.test(note);let group=sel?selective:(t==='P'?primary:secondary);let color=sel?'purple':(t==='P'?'green':'blue');let marker=L.marker([lat,lon],{icon:L.AwesomeMarkers.icon({markerColor:color,icon:'graduation-cap',prefix:'fa'})});marker.bindPopup(`<b>${n}</b><br>${a}<br><small>${note}</small>`).bindTooltip(n,{sticky:true}).addTo(group)}
+schools.forEach(addSchool);
+L.circle([51.489,-0.276],{radius:410,color:'green',fill:false,weight:3}).bindTooltip('Southfield Primary — 2026 last offered distance ≈410m').addTo(areas);
+L.circle([51.4335,-0.166],{radius:525,color:'blue',fill:false,weight:3}).bindTooltip('Graveney — 2026 non-selective last offered distance ≈525m').addTo(areas);
+L.circle([51.4585,-0.3255],{radius:789,color:'green',fill:false,weight:3}).bindTooltip('Deer Park — 2025 last-distance ≈789m; 2026 ≈523m').addTo(areas);
+const note=L.control({position:'bottomleft'});note.onAdd=function(){let d=L.DomUtil.create('div');d.style.cssText='background:white;padding:10px;border:1px solid #aaa;border-radius:6px;max-width:330px;font-size:12px';d.innerHTML='<b>London Family School Map</b><br>🟢 Primary &nbsp; 🔵 Secondary &nbsp; 🟣 Selective/grammar<br>⭕ Circles = historical admissions-distance indicators, not guaranteed catchments.<br>Official priority/catchment polygons should be checked with the relevant council/school.';return d};note.addTo(map);
+primary.addTo(map);secondary.addTo(map);selective.addTo(map);areas.addTo(map);L.control.layers(null,{'🟢 Primary schools':primary,'🔵 Secondary schools':secondary,'🟣 Selective / grammar':selective,'⭕ Admissions distance / catchment':areas},{collapsed:false}).addTo(map);
+</script></body></html>
